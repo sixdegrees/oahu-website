@@ -85,9 +85,13 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: 
  */
+*{
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
 body{
 	font-family: 'MetaProBook';
-	background: #3a424a url('/images/bg_gradient.png') repeat-x top left;  
+	background: #3a424a url('/images/bg_gradient.png') repeat-x top left;
 }
 #container{
   position:relative;
@@ -119,12 +123,18 @@ header h1,
   margin-top:0.2em;
   font-size:29px;
   text-shadow:0px -1px 1px rgba(0,0,0,0.9);
+
 }
 header h1 em,
 #team h3,
 #contact h3{
   color:#008fff;
   font-style:normal;
+
+/*  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#f60)), transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+*/
   text-shadow:0px -1px 1px rgba(0,0,0,0.9), 0px 1px 0px rgba(255,255,255,0.3);
 }
 
@@ -206,10 +216,11 @@ header .description,
   font-size:23px;
   padding-left:53px;
   text-shadow:0px -1px 0px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.6);
-  -webkit-transition: -webkit-box-shadow, -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-box-shadow, -webkit-transform 0.25s ease-out;
+  -moz-transition: -moz-box-shadow, -moz-transform 0.25s ease-out;
 }
 #contact .btn:hover{
-  -webkit-transform: rotate(-0.2deg) scale(1.1);
+  -moz-transform: scale(1.1);
 }
 #contact .btn.twitter{
   background-position: 0 -198px;
@@ -249,7 +260,9 @@ header .description,
   -webkit-box-shadow: 0px 2px 5px #000; 
           box-shadow: 0px 2px 5px #000; 
   -webkit-transform: rotate(-2deg) scale(1);
-  -webkit-transition: -webkit-box-shadow, -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-box-shadow, -webkit-transform 0.2s;
+  -moz-transform: rotate(-2deg) scale(1);
+  -moz-transition: -moz-box-shadow, -moz-transform 0.2s;
 }
 
 #team .postcard:hover{

@@ -272,12 +272,15 @@ header .description,
 }
 
 
-.sprite-mail_off{ background-position: 0 0; width: 258px; height: 49px; } 
-.sprite-mail_on{ background-position: 0 -99px; width: 258px; height: 49px; } 
-.sprite-twitter_off{ background-position: 0 -198px; width: 258px; height: 49px; } 
-.sprite-twitter_on{ background-position: 0 -297px; width: 258px; height: 49px; } 
+.twitter_link,
+.twitter_link:visited{
+  color:#fff;
+}
 
-
+.twitter_link:active,
+.twitter_link:hover{
+  color:#008fff;
+}
 
 
 

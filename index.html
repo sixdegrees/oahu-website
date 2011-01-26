@@ -24,7 +24,21 @@
   <link rel="stylesheet" href="css/style.css?v=2">
 
   <script src="js/libs/modernizr-1.6.min.js"></script>
+  <script type="text/javascript">
 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-489370-43']);
+    _gaq.push(['_setDomainName', '.oahu.fr']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  
 </head>
 
 <body>
@@ -109,19 +123,7 @@
   <script src="js/profiling/yahoo-profiling.min.js"></script>
   <script src="js/profiling/config.js"></script>
   <!-- end profiling code -->
-
-
-  <script>
-   var _gaq = [['_setAccount', '489370-43'], ['_trackPageview']];
-    _gaq.push(['_setDomainName', '.oahu.fr']);
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
+  
 
 </body>
 </html>

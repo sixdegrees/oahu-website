@@ -1,0 +1,63 @@
+
+@import 'compass/css3';
+/* Primary Styles
+  Author: Oahu Team
+*/
+
+$grayblue : #607890;
+$intense_blue: #0581C7;
+
+body{
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  /*background: #3a424a url('/assets/images/bg_gradient.png') repeat-x top left;*/
+  color: #444;
+  font: normal 18px/24px 'MetaProBook', "Helvetica Neue", "Helvetica",Arial, sans-serif;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+
+
+#logo{
+  height:35px;
+  width:120px;
+  display:block;
+  text-indent:-9999px;
+  background: transparent url('/assets/images/logo_blue.png') no-repeat top left;
+}
+
+header{
+  font-family: 'MetaProMedium';
+  .navbar-inner {
+    background: transparent url('/assets/images/navbar_bg.png') top left repeat-x;
+    @include box-shadow(0px 6px 10px rgba(0,0,0,0.5));
+    height:62px;
+    a.brand{
+      text-indent:-9999px;
+      background: transparent url('/assets/images/logo_blue.png') center center no-repeat;
+      width: 118px;
+      height: 42px;
+      margin:0 auto;
+      float:none;
+    }
+    
+  }
+}
+em{
+  font-style:normal;
+  color:$intense_blue;
+}
+
+.hero-unit{
+  margin-top:40px;
+  h1{
+    font-size:36px;
+    margin-bottom:18px;
+  }
+}
+footer{
+  font-family: 'MetaHeadlineOTBold';
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight:normal;
+  font-family:"MetaProBold";
+}

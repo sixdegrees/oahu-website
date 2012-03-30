@@ -1,0 +1,47 @@
+package_assets:         on               # (on, off, always)
+embed_assets:           datauri          # (on, off, datauri)
+compress_assets:        off              # (on, off)
+gzip_assets:            off              # (on, off)
+template_function:      _.template       # (defaults to the built-in micro-templating)
+template_namespace:     JST
+template_extension:     jst
+package_path:           assets             # (defaults to assets)
+javascript_compressor:  uglifier         # (yui, closure)
+# compressor_options:
+#   compilation_level: ADVANCED_OPTIMIZATIONS
+
+javascripts:
+  bootstrap:
+    - app/bootstrap/js/bootstrap-alerts.js
+    - app/bootstrap/js/bootstrap-dropdown.js
+    - app/bootstrap/js/bootstrap-modal.js
+    - app/bootstrap/js/bootstrap-scrollspy.js
+    - app/bootstrap/js/bootstrap-tabs.js
+    - app/bootstrap/js/bootstrap-twipsy.js
+    - app/bootstrap/js/bootstrap-popover.js
+
+  jquery:
+    - app/js/lib/jquery.1.6.2.min.js
+
+  flarevideo:
+    - app/js/lib/jquery.ui.js
+    - app/js/lib/jquery.flash.js
+    - app/js/lib/flarevideo.js
+
+  app:
+    - build/**/*.js
+
+stylesheets:
+  bootstrap:
+    - app/bootstrap/bootstrap.css
+
+  boilerplate:
+    - app/stylesheets/boilerplate/*.css
+
+  flarevideo:
+    - app/stylesheets/jquery_ui/jquery-ui-1.8.16.custom.css
+    - build/assets/flarevideo/*.css
+
+  screen:
+    - build/**/screen.css
+    

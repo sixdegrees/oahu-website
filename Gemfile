@@ -13,8 +13,8 @@ group :development, :test do
   gem 'jammit', :git => 'https://github.com/documentcloud/jammit.git'
 	gem 'haml'
 
-  gem 'flowdock'
-
+  gem 'flowdock',               '~> 0.1.10'
+  gem 'grit'
 
   gem 'guard'
   gem 'guard-bundler'

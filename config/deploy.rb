@@ -1,11 +1,14 @@
-require 'bundler/capistrano'
-
 ############################################################
 
-set :whenever_command, "bundle exec whenever"
 set :application, "oahu.fr"
 set :rvm_ruby_string, '1.9.3-p0'
 set :rvm_type, :user
+
+############################################################
+
+role :web,      "neue.fr", :primary => true
+role :app,      "neue.fr", :primary => true
+role :db,       "neue.fr", :primary => true
 set :deploy_to, "/home/domains/oahu.fr/website"
 
 ############################################################

@@ -1,5 +1,4 @@
 @insertGA = (code)->
-  console.log('code' , code) if console and console.log
   window['_gaq']=[
     ['_setAccount',code],
     ['_trackPageview']

@@ -1,1 +1,162 @@
-body{color:#4f4f4f;font-size:14px;font-family:'Avenir';text-rendering:optimizelegibility;-webkit-font-smoothing:antialiased}.navbar{margin-top:20px}.navbar .container{max-width:1170px}.navbar .brand{float:left;margin-left:0;padding-left:10px;padding-right:10px;background:url('../img/logo.png?1333388692') 0px 10px no-repeat;text-indent:-9999px;width:54px;height:16px}.navbar .navbar-inner{background:transparent;-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;box-shadow:none}.navbar .nav{float:right}.navbar .nav li a{color:#adb8c0;font-size:16px;text-shadow:none}.navbar .nav li a:hover{color:#f55405;cursor:pointer}.navbar .nav li a.contact{color:#4f4f4f}.row{margin-bottom:3em;font-family:'AvenirLTStd35Light';color:#757575;font-size:14px}.row h2{color:#4f4f4f;line-height:17px;margin-bottom:0.3em;font-weight:normal;font-family:'AvenirLTStd55Roman'}.row .contact,.row .jobs{margin-top:20px}.row .contact a,.row .jobs a{width:100%;box-sizing:border-box;background:transparent;-moz-box-shadow:none;-webkit-box-shadow:none;-o-box-shadow:none;box-shadow:none;color:#adb8c0;border:1px solid #d6dbdf}#product .row{font-size:14px}#product .row h2{text-transform:uppercase;font-family:'AvenirLTStd85Heavy'}h2{font-weight:normal;font-size:14px}h1{font-size:18px}.page-header{border-bottom:none}.page-header h1{color:#adb8c0;font-size:24px;font-weight:normal;font-family:'AvenirLTStd55Roman'}.hero-unit{background:transparent;padding-right:0;padding-left:0}.hero-unit em{color:#f55405}.hero-unit h1{font-size:36px;color:#adb8c0}.hero-unit h2{font-family:'AvenirLTStd95Black';font-size:20px;text-transform:uppercase;line-height:24px}
+.logos-sprite, .navbar .brand, ul.clients .pathe, ul.clients .universal, ul.clients .orange {
+  background: url('../img/logos-s906c5f7c53.png') no-repeat;
+}
+
+body {
+  color: #4f4f4f;
+  font-size: 14px;
+  font-family: 'Avenir';
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'Archer-Bold';
+  font-size: 18px;
+}
+h1 em {
+  font-style: normal;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+.navbar .container {
+  max-width: 1170px;
+}
+.navbar .brand {
+  float: left;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-position: 0 0;
+  text-indent: -999px;
+  height: logos-sprite-height(oahu);
+  width: logos-sprite-width(oahu);
+  width: 54px;
+  height: 16px;
+}
+.navbar .navbar-inner {
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+.navbar .nav {
+  float: right;
+}
+.navbar .nav li a {
+  color: #adb8c0;
+  font-size: 16px;
+  text-shadow: none;
+}
+.navbar .nav li a:hover {
+  color: #f55405;
+  cursor: pointer;
+}
+.navbar .nav li a.contact {
+  color: #4f4f4f;
+}
+
+.hero-unit {
+  background: transparent;
+  padding-right: 0;
+  padding-left: 0;
+}
+.hero-unit em {
+  color: #f55405;
+}
+.hero-unit h1 {
+  font-size: 36px;
+  color: #adb8c0;
+}
+.hero-unit h2 {
+  font-family: 'AvenirLTStd95Black';
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.page-header {
+  border-bottom: none;
+}
+.page-header h1 {
+  color: #adb8c0;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'AvenirLTStd55Roman';
+}
+
+.row {
+  margin-bottom: 3em;
+  font-family: 'AvenirLTStd35Light';
+  color: #757575;
+  font-size: 14px;
+}
+.row h2 {
+  color: #4f4f4f;
+  line-height: 17px;
+  margin-bottom: 0.3em;
+  font-weight: normal;
+  font-family: 'AvenirLTStd55Roman';
+}
+.row .contact, .row .jobs {
+  margin-top: 20px;
+}
+.row .contact a, .row .jobs a {
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  color: #adb8c0;
+  border: 1px solid #d6dbdf;
+}
+
+#product .row {
+  font-size: 14px;
+}
+#product .row h2 {
+  text-transform: uppercase;
+  font-family: 'AvenirLTStd85Heavy';
+}
+
+ul.clients {
+  margin-left: 0;
+}
+ul.clients li {
+  display: block;
+  float: left;
+}
+ul.clients .pathe {
+  background-position: 0 -150px;
+  text-indent: -999px;
+  height: logos-sprite-height(pathe);
+  width: logos-sprite-width(pathe);
+  width: 160px;
+  height: 80px;
+}
+ul.clients .universal {
+  background-position: 0 -243px;
+  text-indent: -999px;
+  height: logos-sprite-height(universal);
+  width: logos-sprite-width(universal);
+  width: 160px;
+  height: 115px;
+}
+ul.clients .orange {
+  background-position: 0 -46px;
+  text-indent: -999px;
+  height: logos-sprite-height(orange);
+  width: logos-sprite-width(orange);
+  width: 160px;
+  height: 90px;
+}

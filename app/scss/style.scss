@@ -1,8 +1,10 @@
-
 @import 'compass/css3';
-/* Primary Styles
-  Author: Oahu Team
-*/
+
+$logos-spacing: 30px !default;
+$logos-layout:smart;
+
+@import 'logos/*.png';
+
 
 $text : #4f4f4f;
 $orange: #f55405;
@@ -16,6 +18,20 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
+h2{
+  font-weight:normal;
+  font-size:14px;
+}
+
+h1{
+  font-family:'Archer-Bold';
+  font-size:18px;
+  em{
+    font-style:normal;
+  }
+}
+
+
 .navbar{
   margin-top:20px;
   .container{
@@ -26,11 +42,14 @@ body{
     margin-left: 0;
     padding-left: 10px;
     padding-right: 10px;
-    background : image-url('logo.png') 0px 10px no-repeat;
-    text-indent:-9999px;
+    @include logos-sprite(oahu);
+    $height: logos-sprite-height(oahu);
+    $width : logos-sprite-width(oahu);
+    text-indent:-999px;
+    height:$height;
+    width:$width;
     width:54px;
     height:16px;
-
   }
   .navbar-inner{
     background:transparent;
@@ -54,6 +73,36 @@ body{
     }
   }
 } 
+
+
+.hero-unit{
+  background:transparent;
+  padding-right:0;
+  padding-left:0;
+  em{
+    color:$orange;
+  }
+  h1{
+    font-size:36px;
+    color:$ice;
+  }
+  h2{
+    font-family:'AvenirLTStd95Black';
+    font-size:20px;
+    text-transform:uppercase;
+    line-height:24px;
+  }
+}
+
+.page-header{
+  border-bottom:none;
+  h1{
+    color:$ice;
+    font-size:24px;
+    font-weight:normal;
+    font-family:'AvenirLTStd55Roman';
+  }
+}
 
 .row{
   margin-bottom:3em;
@@ -91,39 +140,40 @@ body{
   }
 }
 
-h2{
-  font-weight:normal;
-  font-size:14px;
-}
-
-h1{
-  font-size:18px;
-}
-
-.page-header{
-  border-bottom:none;
-  h1{
-    color:$ice;
-    font-size:24px;
-    font-weight:normal;
-    font-family:'AvenirLTStd55Roman';
+ul.clients{
+  margin-left:0;
+  li{
+    display:block;
+    float:left;
   }
-}
-.hero-unit{
-  background:transparent;
-  padding-right:0;
-  padding-left:0;
-  em{
-    color:$orange;
+  .pathe{
+    @include logos-sprite(pathe);
+    text-indent:-999px;
+    $height: logos-sprite-height(pathe);
+    $width : logos-sprite-width(pathe);
+    height:$height;
+    width:$width;
+    width: 160px;
+    height:80px;
   }
-  h1{
-    font-size:36px;
-    color:$ice;
+  .universal{
+    @include logos-sprite(universal);
+    text-indent:-999px;
+    $height: logos-sprite-height(universal);
+    $width : logos-sprite-width(universal);
+    height:$height;
+    width:$width;
+    width: 160px;
+    height:115px;
   }
-  h2{
-    font-family:'AvenirLTStd95Black';
-    font-size:20px;
-    text-transform:uppercase;
-    line-height:24px;
+  .orange{
+    @include logos-sprite(orange);
+    text-indent:-999px;
+    $height: logos-sprite-height(orange);
+    $width : logos-sprite-width(orange);
+    height:$height;
+    width:$width;
+    width: 160px;
+    height:90px;
   }
 }

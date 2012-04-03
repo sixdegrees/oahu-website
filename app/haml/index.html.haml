@@ -32,7 +32,7 @@
               %li
                 %a Jobs
               %li
-                %a.contact contact@oahu.fr
+                %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
 
     .container
       .hero-unit
@@ -93,7 +93,7 @@
             %br
             %br
             .contact
-              %a.btn.btn-large <a href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
+              %a.btn.btn-large{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
           .span3.offset1
             .page-header
               %h1 Jobs
@@ -102,7 +102,7 @@
               %li A Front-end developer who knows CSS3 and browsers perfectly
               %li A Chief of product with a keen eye for detail and insatiable need for perfection
             .jobs
-              %a.btn.btn-large <a href='mailto:jobs@oahu.fr'>jobs@oahu.fr</a>
+              %a.btn.btn-large{:href=>'mailto:jobs@oahu.fr'} jobs@oahu.fr
       :javascript
         document.createElement('section');
         document.createElement('header');

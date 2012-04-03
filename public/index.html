@@ -8,15 +8,40 @@
     <meta viewport='width=device-width, initial-scale=1.0' />
     <link href='/favicon.ico' rel='shortcut icon' />
     <link href='/apple-touch-icon.png' rel='apple-touch-icon' />
-    <link href='/assets/fonts/meta.css' rel='stylesheet' />
-    <link href='/assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' />
+    <link href='/assets/fonts/stylesheet.css' rel='stylesheet' />
+    <link href='/assets/vendor/bootstrap.min.css' rel='stylesheet' />
+    <link href='/assets/vendor/bootstrap-responsive.min.css' rel='stylesheet' />
     <link href='/assets/css/style.css' rel='stylesheet' />
   </head>
   <body>
-    <header class='navbar navbar-fixed-top'>
+    <header class='navbar'>
       <div class='navbar-inner'>
         <div class='container'>
           <a class='brand' href='/'>oahu</a>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <div class='nav-collapse'>
+            <ul class='nav'>
+              <li>
+                <a>Product</a>
+              </li>
+              <li>
+                <a>Clients</a>
+              </li>
+              <li>
+                <a>Contact</a>
+              </li>
+              <li>
+                <a>Jobs</a>
+              </li>
+              <li>
+                <a class='contact'>contact@oahu.fr</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -26,16 +51,86 @@
           connect with your audience,
           <em>anywhere</em>
         </h1>
-        <div class='message'>
-          oahu is the best way to manage your whole campaign easily, improve user engagement, and build your community on all your platforms by offering each of your users a unique personalized experience.
-        </div>
+        <h2>
+          Oahu creates long term, meaningful relationships
+          <br />
+          between you and your community
+        </h2>
       </div>
-      <div class='row'>
-        <div class='jobs span4'>
-          We're always on the lookout for new talent. Contact us if you'd like to join !
+      <section id='product'>
+        <div class='page-header'>
+          <h1>Product</h1>
         </div>
-        <div class='contact span4'></div>
-      </div>
+        <div class='row'>
+          <div class='span4'>
+            <h2>Oahu is an integrated marketing platform.</h2>
+            that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
+          </div>
+          <div class='span4'>
+            <h2>Simple to use</h2>
+            Publish our pre-built apps to instantly offer your fans Quizzes, Instant Wins, and branded pages and more. You can build entire campaigns without a single line of code
+          </div>
+          <div class='span4'>
+            <h2>Full service</h2>
+            We handle the media, games mechanics, and user generated contents that make your campaigns richer and more compelling.
+          </div>
+        </div>
+        <div class='row'>
+          <div class='span4'>
+            <h2>Rich realtime api</h2>
+            Use a robust set of rich realtime push components to create even more ambitious campaigns in a fraction of the time and cost.
+          </div>
+          <div class='span4'>
+            <h2>Complete overview</h2>
+            Oahu enables you to get a feel of how your campaign’s doing, who’s playing, who’s sharing and much more.
+          </div>
+          <div class='span4'>
+            <h2>Cross campaign marketing</h2>
+            Most importantly, We do this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class='row'>
+          <div class='span4'>
+            <div class='page-header'>
+              <h1>Clients</h1>
+            </div>
+            <ul class='clients'>
+              <li>Pathé</li>
+              <li>Universal</li>
+              <li>Orange</li>
+            </ul>
+          </div>
+          <div class='span4'>
+            <div class='page-header'>
+              <h1>Contact</h1>
+            </div>
+            <h2>Oahu is currently a subscription service.</h2>
+            We plan on opening it to public in the future, but for now you can get a demo by contacting us. We’ll be sure to get back to you !
+            <br />
+            <br />
+            <br />
+            <div class='contact'>
+              <a class='btn btn-large'>contact@oahu.fr</a>
+            </div>
+          </div>
+          <div class='span4'>
+            <div class='page-header'>
+              <h1>Jobs</h1>
+            </div>
+            <h2>We’re  currently looking for :</h2>
+            <ul>
+              <li>A systems analyst</li>
+              <li>A front-end developer who knows CSS3 like he was born with it</li>
+              <li>A Chief of product with a keen eye for detail and insatiable need for perfection</li>
+            </ul>
+            <div class='jobs'>
+              <a class='btn btn-large'>jobs@oahu.fr</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <script type='text/javascript'>
         //<![CDATA[
           document.createElement('section');

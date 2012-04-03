@@ -14,6 +14,7 @@ guard 'compass', :configuration_file => 'config/config.rb' do
   watch(%r{app/s[ac]ss/(.+)\.s[ac]ss$})
 end
 
+
 guard 'haml', :input => 'app/haml', :output => 'public' do
   watch %r{^app/haml/(.+)(\.html\.haml)}
 end

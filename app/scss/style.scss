@@ -4,60 +4,126 @@
   Author: Oahu Team
 */
 
-$grayblue : #607890;
-$intense_blue: #0581C7;
-
+$text : #4f4f4f;
+$orange: #f55405;
+$ice: #adb8c0;
+$light_ice:#d6dbdf;
 body{
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  /*background: #3a424a url('/assets/images/bg_gradient.png') repeat-x top left;*/
-  color: #444;
-  font: normal 18px/24px 'MetaProBook', "Helvetica Neue", "Helvetica",Arial, sans-serif;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.7);
+  color:$text;
+  font-size:14px;
+  font-family:'Avenir';
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
 }
 
+.navbar{
+  margin-top:20px;
+  .container{
+    max-width:1170px;
+  }
+  .brand{
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background : image-url('logo.png') 0px 10px no-repeat;
+    text-indent:-9999px;
+    width:54px;
+    height:16px;
 
-#logo{
-  height:35px;
-  width:120px;
-  display:block;
-  text-indent:-9999px;
-  background: transparent url('/assets/images/logo_blue.png') no-repeat top left;
-}
-
-header{
-  font-family: 'MetaProMedium';
-  .navbar-inner {
-    background: transparent url('/assets/images/navbar_bg.png') top left repeat-x;
-    @include box-shadow(0px 6px 10px rgba(0,0,0,0.5));
-    height:62px;
-    a.brand{
-      text-indent:-9999px;
-      background: transparent url('/assets/images/logo_blue.png') center center no-repeat;
-      width: 118px;
-      height: 42px;
-      margin:0 auto;
-      float:none;
+  }
+  .navbar-inner{
+    background:transparent;
+    @include box-shadow(none);
+  }
+  .nav{
+    float: right;
+    li{
+      a{
+        color:$ice;
+        font-size:16px;
+        @include text-shadow(none);
+        &:hover{
+          color:$orange;
+          cursor:pointer;
+        }
+        &.contact{
+          color:$text;
+        }
+      }
     }
-    
+  }
+} 
+
+.row{
+  margin-bottom:3em;
+  font-family:'AvenirLTStd35Light';
+
+  color:lighten($text, 15%);
+  font-size:14px;
+  h2{
+    color:$text;
+    line-height:17px;
+    margin-bottom:0.3em;
+    font-weight:normal;
+    font-family:'AvenirLTStd55Roman';
+  }
+  .contact, .jobs{
+    margin-top:20px;
+    a{
+      width: 100%;
+      box-sizing: border-box;
+      background:transparent;
+      @include box-shadow(none);
+      color:$ice;
+      border:1px solid $light_ice;
+    }
   }
 }
-em{
-  font-style:normal;
-  color:$intense_blue;
+
+#product{
+  .row{
+    font-size:14px;
+    h2{
+      text-transform:uppercase;
+      font-family:'AvenirLTStd85Heavy';
+    }
+  }
 }
 
+h2{
+  font-weight:normal;
+  font-size:14px;
+}
+
+h1{
+  font-size:18px;
+}
+
+.page-header{
+  border-bottom:none;
+  h1{
+    color:$ice;
+    font-size:24px;
+    font-weight:normal;
+    font-family:'AvenirLTStd55Roman';
+  }
+}
 .hero-unit{
-  margin-top:40px;
+  background:transparent;
+  padding-right:0;
+  padding-left:0;
+  em{
+    color:$orange;
+  }
   h1{
     font-size:36px;
-    margin-bottom:18px;
+    color:$ice;
   }
-}
-footer{
-  font-family: 'MetaHeadlineOTBold';
-}
-h1, h2, h3, h4, h5, h6{
-  font-weight:normal;
-  font-family:"MetaProBold";
+  h2{
+    font-family:'AvenirLTStd95Black';
+    font-size:20px;
+    text-transform:uppercase;
+    line-height:24px;
+  }
 }

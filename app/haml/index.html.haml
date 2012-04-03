@@ -8,27 +8,102 @@
     %meta{:viewport=>"width=device-width, initial-scale=1.0"}
     %link{:rel=>"shortcut icon", :href=>"/favicon.ico"}
     %link{:rel=>"apple-touch-icon", :href=>"/apple-touch-icon.png"}
-    %link{:rel => "stylesheet", :href=> "/assets/fonts/meta.css" }
-    %link{:rel => "stylesheet", :href=> "/assets/bootstrap/css/bootstrap.min.css" }
+    %link{:rel => "stylesheet", :href=> "/assets/fonts/stylesheet.css" }
+    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap.min.css" }
+    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap-responsive.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/css/style.css" }
   %body
-    %header.navbar.navbar-fixed-top
+    %header.navbar
       .navbar-inner
         .container
           %a.brand{:href=>"/"} oahu
+          %a.btn.btn-navbar{'data-toggle'=>'collapse', 'data-target'=>'.nav-collapse'}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .nav-collapse
+            %ul.nav
+              %li
+                %a Product
+              %li
+                %a Clients
+              %li
+                %a Contact
+              %li
+                %a Jobs
+              %li
+                %a.contact contact@oahu.fr
+
     .container
       .hero-unit
         %h1
           connect with your audience,
           %em anywhere
-        .message
-          oahu is the best way to manage your whole campaign easily, improve user engagement, and build your community on all your platforms by offering each of your users a unique personalized experience.
+        %h2
+          Oahu creates long term, meaningful relationships
+          %br
+          between you and your community
           
-      .row
-        .jobs.span4
-          We're always on the lookout for new talent. Contact us if you'd like to join !
-        .contact.span4
-          
+      %section#product
+        .page-header
+          %h1 Product
+        .row
+          .span4
+            %h2 Oahu is an integrated marketing platform.
+            that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
+
+          .span4
+            %h2 Simple to use
+            Publish our pre-built apps to instantly offer your fans Quizzes, Instant Wins, and branded pages and more. You can build entire campaigns without a single line of code
+
+          .span4
+            %h2 Full service
+            We handle the media, games mechanics, and user generated contents that make your campaigns richer and more compelling.
+
+        .row
+          .span4
+            %h2 Rich realtime api
+            Use a robust set of rich realtime push components to create even more ambitious campaigns in a fraction of the time and cost.
+
+          .span4
+            %h2 Complete overview
+            Oahu enables you to get a feel of how your campaign’s doing, who’s playing, who’s sharing and much more.
+
+          .span4
+            %h2 Cross campaign marketing
+            Most importantly, We do this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick 
+
+
+      %section
+        .row
+          .span4
+            .page-header
+              %h1 Clients
+            %ul.clients
+              %li Pathé
+              %li Universal
+              %li Orange
+
+          .span4
+            .page-header
+              %h1 Contact
+            %h2 Oahu is currently a subscription service.
+            We plan on opening it to public in the future, but for now you can get a demo by contacting us. We’ll be sure to get back to you !
+            %br
+            %br
+            %br
+            .contact
+              %a.btn.btn-large contact@oahu.fr
+          .span4
+            .page-header
+              %h1 Jobs
+            %h2 We’re  currently looking for : 
+            %ul
+              %li A systems analyst
+              %li A front-end developer who knows CSS3 like he was born with it
+              %li A Chief of product with a keen eye for detail and insatiable need for perfection
+            .jobs
+              %a.btn.btn-large jobs@oahu.fr
       :javascript
         document.createElement('section');
         document.createElement('header');

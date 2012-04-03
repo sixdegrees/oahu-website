@@ -58,7 +58,6 @@ h1{
     @include box-shadow(none);
   }
   .nav{
-    float: right;
     li{
       a{
         color:$ice;
@@ -73,6 +72,21 @@ h1{
         }
       }
     }
+  }
+  li.dropdown, li.logged_out{
+    a{
+      font-size:12px;
+    }
+    &.open .dropdown-toggle{
+      color:$ice;
+    }
+  }
+
+  .dropdown-menu li > a:hover,
+  .dropdown-menu .active > a,
+  .dropdown-menu .active > a:hover{
+    background:$ice;
+    color:white;
   }
 } 
 
@@ -118,28 +132,32 @@ h1{
     font-family:'AvenirLTStd85Heavy';
     text-transform:uppercase;
   }
-  .contact, .jobs{
-    margin-top:20px;
-    a{
-      width: 100%;
-      box-sizing: border-box;
-      background:transparent;
-      @include box-shadow(none);
-      color:$ice;
-      border:1px solid $light_ice;
-    }
-  }
+
+}
+a.btn{
+  margin-top:20px;
+  width: 100%;
+  box-sizing: border-box;
+  background:transparent;
+  @include box-shadow(none);
+  font-family:'AvenirLTStd55Roman';
+  color:darken($ice, 20%);
+  border:1px solid $light_ice;
 }
 
 #product{
-  background:image-url('separator.png') top center no-repeat;
-  padding-top:35px;
   .row{
     font-size:14px;
     h2{
     }
   }
 }
+
+section{
+  background:image-url('separator.png') top center no-repeat;
+  padding-top:35px;
+}
+
 
 ul.clients{
   margin-left:0;
@@ -178,3 +196,13 @@ ul.clients{
     height:90px;
   }
 }
+
+.logged_in{
+  display:none;
+}
+
+.activity{
+  max-height:300px;
+  overflow:auto;
+}
+

@@ -26,7 +26,24 @@
             <span class='icon-bar'></span>
           </a>
           <div class='nav-collapse'>
-            <ul class='nav'>
+            <ul class='nav secondary-nav pull-right'>
+              <li class='logged_in dropdown' data-oahu-display='connected'>
+                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                  <span class='oahu_username' data-oahu-bind='name'></span>
+                  <span class='oahu_userpicture'></span>
+                  <b class='caret'></b>
+                </a>
+                <ul class='dropdown-menu'>
+                  <li>
+                    <a class='logout_btn' data-oahu-action='disconnect' data-oahu-display='connected' href='#'>Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class='logged_out login_status' data-oahu-display='disconnected'>
+                <a class='login_btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook' href='#'>Login</a>
+              </li>
+            </ul>
+            <ul class='nav pull-right'>
               <li>
                 <a href='#product'>Product</a>
               </li>
@@ -39,15 +56,14 @@
               <li>
                 <a href='jobs'>Jobs</a>
               </li>
-              <li>
-                <a class='contact' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
-              </li>
+              <!-- %li -->
+              <!-- %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr -->
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <div class='container'>
+    <div class='container' id='page'>
       <div class='hero-unit'>
         <h1>
           Connect with your audience,
@@ -96,6 +112,36 @@
           </div>
         </div>
       </section>
+      <section id='testdrive'>
+        <div class='page-header'>
+          <h1>Test Oahu right here</h1>
+        </div>
+        <div class='row'>
+          <div class='span4'>
+            <h2>Connect and test out the main Oahu features</h2>
+            You will be asked to connect with Facebook, and upon accepting, will be immediately connected, you will see which ones of your friends are connected too, and be able to get a feel of the ease of use of our platform.
+            <div class='connect'>
+              <a class='btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook'>Connect with Facebook</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>You're already using it !</h2>
+            Welcome,
+            <span data-oahu-bind='name'></span>
+            <br />
+            <span class='oahu_friendscount'>0</span>
+            of your friends are using Oahu
+            <div class='share'>
+              <a class='btn' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share your love</a>
+              <a class='btn' data-oahu-action='disconnect'>Disconnect</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>Your recent activity</h2>
+            <div class='activity' data-oahu-bind='activity'></div>
+          </div>
+        </div>
+      </section>
       <section>
         <div class='row'>
           <div class='span4'>
@@ -128,7 +174,7 @@
             <div class='page-header' id='jobs'>
               <h1>Jobs</h1>
             </div>
-            <h2>We’re  currently looking for :</h2>
+            <h2>We're  currently looking for :</h2>
             <ul>
               <li>A Front-end developer who knows CSS3 and browsers perfectly</li>
               <li>A Chief of product with a keen eye for detail and insatiable need for perfection</li>
@@ -145,9 +191,15 @@
           document.createElement('header');
         //]]>
       </script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
+        //]]>
+      </script>
       <script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-      <script src='/assets/bootstrap/js/bootstrap.js'></script>
-      <script src='/assets/js/ga.js'></script>
+      <script src='/assets/vendor/bootstrap.js'></script>
+      <script src='//app.oahu.fr/assets/oahu.js'></script>
+      <script src='//app.oahu.fr/assets/oahu-apps.js'></script>
       <script src='/assets/js/app.js'></script>
     </div>
   </body>

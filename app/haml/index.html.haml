@@ -24,7 +24,19 @@
             %span.icon-bar
             %span.icon-bar
           .nav-collapse
-            %ul.nav
+            %ul.nav.secondary-nav.pull-right
+              %li.logged_in.dropdown{"data-oahu-display"=>'connected'}
+                %a.dropdown-toggle{:href=>"#",  "data-toggle"=>"dropdown"}
+                  %span.oahu_username{"data-oahu-bind"=>'name'}
+                  %span.oahu_userpicture
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a.logout_btn{:href=>"#", "data-oahu-display"=>'connected', "data-oahu-action"=>"disconnect"} Logout
+              %li.logged_out.login_status{"data-oahu-display"=>'disconnected'}
+                %a.login_btn{:href=>'#', "data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Login
+
+            %ul.nav.pull-right
               %li
                 %a{:href=>'#product'} Product
               %li
@@ -33,10 +45,11 @@
                 %a{:href=>'contact'} Contact
               %li
                 %a{:href=>'jobs'} Jobs
-              %li
-                %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
+              / %li
+              /   %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
 
-    .container
+
+    #page.container
       .hero-unit
         %h1
           Connect with your audience,
@@ -78,6 +91,30 @@
             %h2 Cross campaign marketing
             Most importantly, We do all of this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick 
 
+      %section#testdrive
+        .page-header
+          %h1 Test Oahu right here
+        .row
+          .span4
+            %h2 Connect and test out the main Oahu features
+            You will be asked to connect with Facebook, and upon accepting, will be immediately connected, you will see which ones of your friends are connected too, and be able to get a feel of the ease of use of our platform.
+            .connect
+              %a.btn{"data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Connect with Facebook
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2 You're already using it !
+            Welcome, 
+            %span{"data-oahu-bind"=>'name'}
+            %br
+            %span.oahu_friendscount 0
+            of your friends are using Oahu
+            .share
+              %a.btn{"data-oahu-action"=>"ui.share", "data-oahu-provider"=>"facebook"} Share your love
+              %a.btn{"data-oahu-action"=>'disconnect'} Disconnect
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2 Your recent activity
+            .activity{"data-oahu-bind"=>'activity'}
+
+
       %section
         .row
           .span4
@@ -103,16 +140,20 @@
           .span3.offset1
             #jobs.page-header
               %h1 Jobs
-            %h2 We’re  currently looking for : 
+            %h2 We're  currently looking for : 
             %ul
               %li A Front-end developer who knows CSS3 and browsers perfectly
               %li A Chief of product with a keen eye for detail and insatiable need for perfection
             .jobs
               %a.btn.btn-large{:href=>'mailto:jobs@oahu.fr'} jobs@oahu.fr
+
       :javascript
         document.createElement('section');
         document.createElement('header');
+      :javascript
+        OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
       %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
-      %script{:src=>'/assets/bootstrap/js/bootstrap.js'}
-      %script{:src=>'/assets/js/ga.js'}
+      %script{:src=>'/assets/vendor/bootstrap.js'}
+      %script{:src=>'//app.oahu.fr/assets/oahu.js'}
+      %script{:src=>'//app.oahu.fr/assets/oahu-apps.js'}
       %script{:src=>'/assets/js/app.js'}

@@ -50,9 +50,6 @@ h1 em {
   -o-box-shadow: none;
   box-shadow: none;
 }
-.navbar .nav {
-  float: right;
-}
 .navbar .nav li a {
   color: #adb8c0;
   font-size: 16px;
@@ -64,6 +61,18 @@ h1 em {
 }
 .navbar .nav li a.contact {
   color: #4f4f4f;
+}
+.navbar li.dropdown a, .navbar li.logged_out a {
+  font-size: 12px;
+}
+.navbar li.dropdown.open .dropdown-toggle, .navbar li.logged_out.open .dropdown-toggle {
+  color: #adb8c0;
+}
+.navbar .dropdown-menu li > a:hover,
+.navbar .dropdown-menu .active > a,
+.navbar .dropdown-menu .active > a:hover {
+  background: #adb8c0;
+  color: white;
 }
 
 .hero-unit {
@@ -108,10 +117,9 @@ h1 em {
   font-family: 'AvenirLTStd85Heavy';
   text-transform: uppercase;
 }
-.row .contact, .row .jobs {
+
+a.btn {
   margin-top: 20px;
-}
-.row .contact a, .row .jobs a {
   width: 100%;
   box-sizing: border-box;
   background: transparent;
@@ -119,16 +127,18 @@ h1 em {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  color: #adb8c0;
+  font-family: 'AvenirLTStd55Roman';
+  color: #738694;
   border: 1px solid #d6dbdf;
 }
 
-#product {
-  background: url('../img/separator.png?1333464272') top center no-repeat;
-  padding-top: 35px;
-}
 #product .row {
   font-size: 14px;
+}
+
+section {
+  background: url('../img/separator.png?1333464272') top center no-repeat;
+  padding-top: 35px;
 }
 
 ul.clients {
@@ -161,4 +171,13 @@ ul.clients .orange {
   width: logos-sprite-width(orange);
   width: 160px;
   height: 90px;
+}
+
+.logged_in {
+  display: none;
+}
+
+.activity {
+  max-height: 300px;
+  overflow: auto;
 }

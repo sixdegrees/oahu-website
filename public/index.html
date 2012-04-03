@@ -8,13 +8,15 @@
     <meta viewport='width=device-width, initial-scale=1.0' />
     <link href='/favicon.ico' rel='shortcut icon' />
     <link href='/apple-touch-icon.png' rel='apple-touch-icon' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <link href='/assets/fonts/stylesheet.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap.min.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap-responsive.min.css' rel='stylesheet' />
     <link href='/assets/css/style.css' rel='stylesheet' />
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
   </head>
   <body>
-    <header class='navbar'>
+    <header class='navbar navbar-fixed-top'>
       <div class='navbar-inner'>
         <div class='container'>
           <a class='brand' href='/'>oahu</a>
@@ -26,16 +28,16 @@
           <div class='nav-collapse'>
             <ul class='nav'>
               <li>
-                <a>Product</a>
+                <a href='#product'>Product</a>
               </li>
               <li>
-                <a>Clients</a>
+                <a href='clients'>Clients</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href='contact'>Contact</a>
               </li>
               <li>
-                <a>Jobs</a>
+                <a href='jobs'>Jobs</a>
               </li>
               <li>
                 <a class='contact' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
@@ -48,7 +50,7 @@
     <div class='container'>
       <div class='hero-unit'>
         <h1>
-          connect with your audience,
+          Connect with your audience,
           <em>anywhere</em>
         </h1>
         <h2>
@@ -63,7 +65,11 @@
         </div>
         <div class='row'>
           <div class='span3'>
-            <h2>Oahu is an integrated marketing platform.</h2>
+            <h2>
+              Oahu is an integrated
+              <br />
+              marketing platform.
+            </h2>
             that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
           </div>
           <div class='span3 offset1'>
@@ -93,7 +99,7 @@
       <section>
         <div class='row'>
           <div class='span4'>
-            <div class='page-header'>
+            <div class='page-header' id='clients'>
               <h1>Clients</h1>
             </div>
             <ul class='clients'>
@@ -103,10 +109,14 @@
             </ul>
           </div>
           <div class='span3'>
-            <div class='page-header'>
+            <div class='page-header' id='contact'>
               <h1>Contact</h1>
             </div>
-            <h2>Oahu is currently a subscription service.</h2>
+            <h2>
+              Oahu is currently
+              <br />
+              a subscription service.
+            </h2>
             We plan on opening it to public in the future, but for now you can get a demo by contacting us. We’ll be sure to get back to you !
             <br />
             <br />
@@ -115,7 +125,7 @@
             </div>
           </div>
           <div class='span3 offset1'>
-            <div class='page-header'>
+            <div class='page-header' id='jobs'>
               <h1>Jobs</h1>
             </div>
             <h2>We’re  currently looking for :</h2>

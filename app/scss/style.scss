@@ -13,7 +13,7 @@ $light_ice:#d6dbdf;
 body{
   color:$text;
   font-size:14px;
-  font-family:'Avenir';
+  font-family:'AvenirLTStd55Roman';
   text-rendering:optimizelegibility;
   -webkit-font-smoothing:antialiased;
 }
@@ -33,9 +33,11 @@ h1{
 
 
 .navbar{
-  margin-top:20px;
+  background:white;
+  @include box-shadow(0px 0px 10px rgba(255,255,255,0.8));
+  padding-top:35px;
   .container{
-    max-width:1170px;
+
   }
   .brand{
     float: left;
@@ -74,17 +76,17 @@ h1{
   }
 } 
 
-
 .hero-unit{
   background:transparent;
-  padding-right:0;
-  padding-left:0;
+  padding:95px 0 15px 0;
+
   em{
     color:$orange;
   }
   h1{
     font-size:36px;
     color:$ice;
+    margin-bottom:10px;
   }
   h2{
     font-family:'AvenirLTStd95Black';
@@ -106,8 +108,6 @@ h1{
 
 .row{
   margin-bottom:3em;
-  font-family:'AvenirLTStd35Light';
-
   color:lighten($text, 15%);
   font-size:14px;
   h2{
@@ -115,7 +115,8 @@ h1{
     line-height:17px;
     margin-bottom:0.3em;
     font-weight:normal;
-    font-family:'AvenirLTStd55Roman';
+    font-family:'AvenirLTStd85Heavy';
+    text-transform:uppercase;
   }
   .contact, .jobs{
     margin-top:20px;
@@ -131,11 +132,11 @@ h1{
 }
 
 #product{
+  background:image-url('separator.png') top center no-repeat;
+  padding-top:35px;
   .row{
     font-size:14px;
     h2{
-      text-transform:uppercase;
-      font-family:'AvenirLTStd85Heavy';
     }
   }
 }

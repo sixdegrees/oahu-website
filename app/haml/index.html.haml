@@ -8,12 +8,14 @@
     %meta{:viewport=>"width=device-width, initial-scale=1.0"}
     %link{:rel=>"shortcut icon", :href=>"/favicon.ico"}
     %link{:rel=>"apple-touch-icon", :href=>"/apple-touch-icon.png"}
+    %meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1.0"}
     %link{:rel => "stylesheet", :href=> "/assets/fonts/stylesheet.css" }
     %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap-responsive.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/css/style.css" }
+    %script{:src=>"http://html5shim.googlecode.com/svn/trunk/html5.js"}
   %body
-    %header.navbar
+    %header.navbar.navbar-fixed-top
       .navbar-inner
         .container
           %a.brand{:href=>"/"} oahu
@@ -24,20 +26,20 @@
           .nav-collapse
             %ul.nav
               %li
-                %a Product
+                %a{:href=>'#product'} Product
               %li
-                %a Clients
+                %a{:href=>'clients'} Clients
               %li
-                %a Contact
+                %a{:href=>'contact'} Contact
               %li
-                %a Jobs
+                %a{:href=>'jobs'} Jobs
               %li
                 %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
 
     .container
       .hero-unit
         %h1
-          connect with your audience,
+          Connect with your audience,
           %em anywhere
         %h2
           Oahu creates long term, meaningful relationships
@@ -49,7 +51,10 @@
           %h1 Product
         .row
           .span3
-            %h2 Oahu is an integrated marketing platform.
+            %h2
+              Oahu is an integrated
+              %br
+              marketing platform.
             that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
 
           .span3.offset1
@@ -76,7 +81,7 @@
       %section
         .row
           .span4
-            .page-header
+            #clients.page-header
               %h1 Clients
             %ul.clients
               %li.universal Universal
@@ -84,16 +89,19 @@
               %li.orange Orange
 
           .span3
-            .page-header
+            #contact.page-header
               %h1 Contact
-            %h2 Oahu is currently a subscription service.
+            %h2
+              Oahu is currently
+              %br
+              a subscription service.
             We plan on opening it to public in the future, but for now you can get a demo by contacting us. We’ll be sure to get back to you !
             %br
             %br
             .contact
               %a.btn.btn-large{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
           .span3.offset1
-            .page-header
+            #jobs.page-header
               %h1 Jobs
             %h2 We’re  currently looking for : 
             %ul

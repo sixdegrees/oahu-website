@@ -5,7 +5,7 @@
 body {
   color: #4f4f4f;
   font-size: 14px;
-  font-family: 'Avenir';
+  font-family: 'AvenirLTStd55Roman';
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -24,10 +24,12 @@ h1 em {
 }
 
 .navbar {
-  margin-top: 20px;
-}
-.navbar .container {
-  max-width: 1170px;
+  background: white;
+  -moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  -o-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  padding-top: 35px;
 }
 .navbar .brand {
   float: left;
@@ -66,8 +68,7 @@ h1 em {
 
 .hero-unit {
   background: transparent;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 95px 0 15px 0;
 }
 .hero-unit em {
   color: #f55405;
@@ -75,6 +76,7 @@ h1 em {
 .hero-unit h1 {
   font-size: 36px;
   color: #adb8c0;
+  margin-bottom: 10px;
 }
 .hero-unit h2 {
   font-family: 'AvenirLTStd95Black';
@@ -95,7 +97,6 @@ h1 em {
 
 .row {
   margin-bottom: 3em;
-  font-family: 'AvenirLTStd35Light';
   color: #757575;
   font-size: 14px;
 }
@@ -104,7 +105,8 @@ h1 em {
   line-height: 17px;
   margin-bottom: 0.3em;
   font-weight: normal;
-  font-family: 'AvenirLTStd55Roman';
+  font-family: 'AvenirLTStd85Heavy';
+  text-transform: uppercase;
 }
 .row .contact, .row .jobs {
   margin-top: 20px;
@@ -121,12 +123,12 @@ h1 em {
   border: 1px solid #d6dbdf;
 }
 
+#product {
+  background: url('../img/separator.png?1333464272') top center no-repeat;
+  padding-top: 35px;
+}
 #product .row {
   font-size: 14px;
-}
-#product .row h2 {
-  text-transform: uppercase;
-  font-family: 'AvenirLTStd85Heavy';
 }
 
 ul.clients {

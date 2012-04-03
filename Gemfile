@@ -5,6 +5,10 @@ group :development, :test do
   gem 'capistrano'
   gem 'capistrano-ext'
 
+
+  gem 'compass'
+  gem 'oily_png'
+
 	gem 'adsf'
   gem 'livereload'
 	gem 'rb-fsevent'

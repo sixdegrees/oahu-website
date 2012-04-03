@@ -4,15 +4,17 @@
 http_path = "/"
 
 sass_dir = "app/scss"
-css_dir = "public/assets/css"
 
+css_dir    = "public/assets/css"
 images_dir = "public/assets/img"
-fonts_dir = "public/assets/css/fonts"
+fonts_dir  = "public/assets/fonts"
+
+# generated_images_dir = "public/assets/img/"
 
 javascripts_dir = "public/assets/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
-output_style = :compressed
+# output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true

@@ -9,10 +9,11 @@
     %link{:rel=>"shortcut icon", :href=>"/favicon.ico"}
     %link{:rel=>"apple-touch-icon", :href=>"/apple-touch-icon.png"}
     %meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1.0"}
-    %link{:rel => "stylesheet", :href=> "/assets/fonts/stylesheet.css" }
-    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap.min.css" }
-    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap-responsive.min.css" }
+
+    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap/bootstrap.min.css" }
+    %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap/bootstrap-responsive.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/css/style.css" }
+
     %script{:src=>"http://html5shim.googlecode.com/svn/trunk/html5.js"}
   %body
     %header.navbar.navbar-fixed-top
@@ -27,6 +28,8 @@
             %ul.nav.pull-right
               %li
                 %a{:href=>'#product'} Product
+              %li
+                %a{:href=>'#showcase'} Showcase
               %li
                 %a{:href=>'#clients'} Clients
               %li
@@ -44,10 +47,39 @@
           %em anywhere
         %h2
           Oahu creates long term, meaningful relationships between you and your community
+<<<<<<< HEAD
         %h3
           Oahu is an integrated marketing platform that enables you to build richer, more engaging campaigns.
           %br
           When using Oahu, you're assured that your campaign is optimized for engagement.
+=======
+          
+      %section#showcase
+        .row
+          .span12
+            #carousel.carousel
+              .carousel-inner
+                .item
+                  %h3 American Pie 4
+                  %img{:src=>'assets/img/screens/screen_01.jpg'}
+
+                .item
+                  %h3 Sur la piste du Marsupilami
+                  %img{:src=>'assets/img/screens/screen_02.jpg'}
+
+                .item
+                  %h3 Battleship
+                  %img{:src=>'assets/img/screens/screen_03.jpg'}
+
+                .item
+                  %h3 Pathé Films
+                  %img{:src=>'assets/img/screens/screen_05.jpg'}
+                .item
+                  %h3 Universal Pictures Film France
+                  %img{:src=>'assets/img/screens/screen_06.jpg'}
+              %a.carousel-control.left{:href=>'#carousel', "data-slide"=>'prev'}
+              %a.carousel-control.right{:href=>'#carousel', "data-slide"=>'next'}
+>>>>>>> move stuff around, make carousel
       %section#product
         .page-header
           %h1 Product
@@ -86,7 +118,6 @@
             %p Most importantly, We do all of this and more with an easy to use single sign-on, that authenticates your fans on all your platforms, enriches their profile across campaigns, allowing you to offer them precisely what makes them tick.
             %h4 The more you use Oahu, the more value your audience gains from it. Reward them for their engagement at a global scale, and make them ask for more !
 
-
       %section
         .row
           #clients.span3.clearfix
@@ -123,5 +154,7 @@
       :javascript
         document.createElement('section');
         document.createElement('header');
+
       %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
-      %script{:src=>'/assets/vendor/bootstrap.js'}
+      %script{:src=>'/assets/vendor/bootstrap/bootstrap.js'}
+      %script{:src=>'/assets/js/app.js'}

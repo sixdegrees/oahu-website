@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'Archer-Bold';
+  src: url("/assets/fonts/archer-bold-pro.eot");
+  src: url("/assets/fonts/archer-bold-pro.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/archer-bold-pro.woff") format("woff"), url("/assets/fonts/archer-bold-pro.ttf") format("truetype"), url("/assets/fonts/archer-bold-pro.svg#archer-bold-pro") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd85Heavy';
+  src: url("/assets/fonts/avenirltstd-heavy-webfont.eot");
+  src: url("/assets/fonts/avenirltstd-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/avenirltstd-heavy-webfont.woff") format("woff"), url("/assets/fonts/avenirltstd-heavy-webfont.ttf") format("truetype"), url("/assets/fonts/avenirltstd-heavy-webfont.svg#AvenirLTStd85Heavy") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd95Black';
+  src: url("/assets/fonts/avenirltstd-black-webfont.eot");
+  src: url("/assets/fonts/avenirltstd-black-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/avenirltstd-black-webfont.woff") format("woff"), url("/assets/fonts/avenirltstd-black-webfont.ttf") format("truetype"), url("/assets/fonts/avenirltstd-black-webfont.svg#AvenirLTStd95Black") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd65Medium';
+  src: url("/assets/fonts/avenirltstd-medium-webfont.eot");
+  src: url("/assets/fonts/avenirltstd-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/avenirltstd-medium-webfont.woff") format("woff"), url("/assets/fonts/avenirltstd-medium-webfont.ttf") format("truetype"), url("/assets/fonts/avenirltstd-medium-webfont.svg#AvenirLTStd65Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd55Roman';
+  src: url("/assets/fonts/avenirltstd-roman-webfont.eot");
+  src: url("/assets/fonts/avenirltstd-roman-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/avenirltstd-roman-webfont.woff") format("woff"), url("/assets/fonts/avenirltstd-roman-webfont.ttf") format("truetype"), url("/assets/fonts/avenirltstd-roman-webfont.svg#AvenirLTStd55Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd35Light';
+  src: url("/assets/fonts/avenirltstd-light-webfont.eot");
+  src: url("/assets/fonts/avenirltstd-light-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/avenirltstd-light-webfont.woff") format("woff"), url("/assets/fonts/avenirltstd-light-webfont.ttf") format("truetype"), url("/assets/fonts/avenirltstd-light-webfont.svg#AvenirLTStd35Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logos-sprite, .navbar .brand, #clients .pathe, #clients .universal, #clients .orange {
   background: url('../img/logos-s67b9c1f3d6.png') no-repeat;
 }
@@ -210,4 +258,31 @@ a.btn {
 .activity {
   max-height: 300px;
   overflow: auto;
+}
+
+#carousel {
+  margin-bottom: 0;
+}
+#carousel .item {
+  background-color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+#carousel .item h3 {
+  display: none;
+}
+#carousel .item img {
+  display: block;
+  margin: 0 auto;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#carousel img {
+  max-height: 400px;
 }

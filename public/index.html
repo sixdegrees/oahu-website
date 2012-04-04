@@ -163,6 +163,41 @@
           </div>
         </div>
       </section>
+      <section data-oahu-display='connected' id='testdrive'>
+        <div class='page-header'>
+          <h1>Test Oahu right here</h1>
+        </div>
+        <div class='row'>
+          <div class='span4'>
+            <h2>Test out the main Oahu features</h2>
+            <p>
+              Since you're connected to Oahu, here's a few simple features you can immediately test out.
+              <br />
+              Many more are available.
+            </p>
+            <div class='connect'>
+              <a class='btn' data-oahu-action='disconnect' data-oahu-display='connected'>Disconnect</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>
+              Welcome,
+              <span class='username' data-oahu-bind='name'></span>
+            </h2>
+            <p>
+              <span class='oahu_friendscount'>0</span>
+              of your friends are using Oahu
+            </p>
+            <div class='share'>
+              <a class='btn' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share your love</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>Your recent activity</h2>
+            <div class='activity' data-oahu-bind='activity'></div>
+          </div>
+        </div>
+      </section>
       <section>
         <div class='row'>
           <div class='span2 clearfix' id='clients'>

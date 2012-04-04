@@ -124,6 +124,31 @@
             %h2 Your recent activity
             .activity{"data-oahu-bind"=>'activity'}
 
+      %section#testdrive{"data-oahu-display"=>'connected'}
+        .page-header
+          %h1 Test Oahu right here
+        .row
+          .span4
+            %h2 Test out the main Oahu features
+            %p
+              Since you're connected to Oahu, here's a few simple features you can immediately test out.
+              %br
+              Many more are available.
+            .connect
+              %a.btn{"data-oahu-display"=>'connected', "data-oahu-action"=>'disconnect'} Disconnect
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2
+              Welcome,
+              %span.username{"data-oahu-bind"=>'name'} 
+            %p 
+              %span.oahu_friendscount 0
+              of your friends are using Oahu
+            .share
+              %a.btn{"data-oahu-action"=>"ui.share", "data-oahu-provider"=>"facebook"} Share your love
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2 Your recent activity
+            .activity{"data-oahu-bind"=>'activity'}
+
       %section
         .row
           #clients.span2.clearfix

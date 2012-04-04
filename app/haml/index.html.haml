@@ -23,18 +23,30 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
+          .nav-collapse
+            %ul.nav.secondary-nav.pull-right
+              %li.logged_in.dropdown{"data-oahu-display"=>'connected'}
+                %a.dropdown-toggle{:href=>"#",  "data-toggle"=>"dropdown"}
+                  %span.oahu_username{"data-oahu-bind"=>'name'}
+                  %span.oahu_userpicture
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a.logout_btn{"data-oahu-display"=>'connected', "data-oahu-action"=>"disconnect", :href=>"#"} Logout
+              %li.logged_out.login_status{"data-oahu-display"=>'disconnected'}
+                %a.login_btn{:href=>'#', "data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Login
 
-          %ul.nav.pull-right
-            %li
-              %a{:href=>'#product'} Product
-            %li
-              %a{:href=>'clients'} Clients
-            %li
-              %a{:href=>'contact'} Contact
-            %li
-              %a{:href=>'jobs'} Jobs
-            %li
-              %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
+            %ul.nav.pull-right
+              %li
+                %a{:href=>'#product'} Product
+              %li
+                %a{:href=>'clients'} Clients
+              %li
+                %a{:href=>'contact'} Contact
+              %li
+                %a{:href=>'jobs'} Jobs
+              / %li
+              /   %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
 
 
     #page.container
@@ -80,6 +92,31 @@
             %h2 Cross campaign marketing
             %p Most importantly, We do all of this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick 
 
+      %section#testdrive{"data-oahu-display"=>'connected'}
+        .page-header
+          %h1 Test Oahu right here
+        .row
+          .span4
+            %h2 Test out the main Oahu features
+            %p
+              Since you're connected to Oahu, here's a few simple features you can immediately test out.
+              %br
+              Many more are available.
+            .connect
+              %a.btn{"data-oahu-display"=>'connected', "data-oahu-action"=>'disconnect'} Disconnect
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2
+              Welcome,
+              %span.username{"data-oahu-bind"=>'name'} 
+            %p 
+              %span.oahu_friendscount 0
+              of your friends are using Oahu
+            .share
+              %a.btn{"data-oahu-action"=>"ui.share", "data-oahu-provider"=>"facebook"} Share your love
+          .span4.logged_in{"data-oahu-display"=>'connected'}
+            %h2 Your recent activity
+            .activity{"data-oahu-bind"=>'activity'}
+
 
       %section
         .row
@@ -116,5 +153,10 @@
       :javascript
         document.createElement('section');
         document.createElement('header');
+      :javascript
+        OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
       %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
       %script{:src=>'/assets/vendor/bootstrap.js'}
+      %script{:src=>'//app.oahu.fr/assets/oahu.js'}
+      %script{:src=>'//app.oahu.fr/assets/oahu-apps.js'}
+      %script{:src=>'/assets/js/app.js'}

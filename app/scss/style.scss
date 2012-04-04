@@ -195,6 +195,9 @@ section{
     display:block;
     float:left;
   }
+  p{
+    float:left;
+  }
   .pathe{
     @include logos-sprite(pathe);
     text-indent:-999px;
@@ -202,7 +205,7 @@ section{
     $width : logos-sprite-width(pathe);
     height:$height;
     width:$width;
-    width: 160px;
+    width: 100px;
     height:80px;
   }
   .universal{
@@ -212,8 +215,8 @@ section{
     $width : logos-sprite-width(universal);
     height:$height;
     width:$width;
-    width: 160px;
-    height:115px;
+    width: 100px;
+    height:80px;
   }
   .orange{
     @include logos-sprite(orange);
@@ -222,8 +225,8 @@ section{
     $width : logos-sprite-width(orange);
     height:$height;
     width:$width;
-    width: 160px;
-    height:90px;
+    width: 100px;
+    height:80px;
   }
 }
 

@@ -1,5 +1,5 @@
 .logos-sprite, .navbar .brand, #clients .pathe, #clients .universal, #clients .orange {
-  background: url('../img/logos-s906c5f7c53.png') no-repeat;
+  background: url('../img/logos-s67b9c1f3d6.png') no-repeat;
 }
 
 body {
@@ -168,12 +168,15 @@ a.btn {
   display: block;
   float: left;
 }
+#clients p {
+  float: left;
+}
 #clients .pathe {
   background-position: 0 -150px;
   text-indent: -999px;
   height: logos-sprite-height(pathe);
   width: logos-sprite-width(pathe);
-  width: 160px;
+  width: 100px;
   height: 80px;
 }
 #clients .universal {
@@ -181,16 +184,16 @@ a.btn {
   text-indent: -999px;
   height: logos-sprite-height(universal);
   width: logos-sprite-width(universal);
-  width: 160px;
-  height: 115px;
+  width: 100px;
+  height: 80px;
 }
 #clients .orange {
   background-position: 0 -46px;
   text-indent: -999px;
   height: logos-sprite-height(orange);
   width: logos-sprite-width(orange);
-  width: 160px;
-  height: 90px;
+  width: 100px;
+  height: 80px;
 }
 
 .logged_in {

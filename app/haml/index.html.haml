@@ -23,18 +23,18 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-
-          %ul.nav.pull-right
-            %li
-              %a{:href=>'#product'} Product
-            %li
-              %a{:href=>'clients'} Clients
-            %li
-              %a{:href=>'contact'} Contact
-            %li
-              %a{:href=>'jobs'} Jobs
-            %li
-              %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
+          .nav-collapse
+            %ul.nav.pull-right
+              %li
+                %a{:href=>'#product'} Product
+              %li
+                %a{:href=>'#clients'} Clients
+              %li
+                %a{:href=>'#contact'} Contact
+              %li
+                %a{:href=>'#jobs'} Jobs
+              %li
+                %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
 
 
     #page.container
@@ -43,9 +43,7 @@
           Connect with your audience,
           %em anywhere
         %h2
-          Oahu creates long term, meaningful relationships
-          %br
-          between you and your community
+          Oahu creates long term, meaningful relationships between you and your community
           
       %section#product
         .page-header
@@ -56,7 +54,7 @@
               Oahu is an integrated
               %br
               marketing platform.
-            that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
+            %p that enables you to build richer, more engaging campaigns. Be assured that your campaign is optimized for engagement.
 
           .span3.offset1
             %h2 Simple to use
@@ -83,16 +81,15 @@
 
       %section
         .row
-          .span4
-            #clients.page-header
+          #clients.span3
+            .page-header
               %h1 Clients
-            %ul.clients
-              %li.universal Universal
-              %li.pathe Pathé
-              %li.orange Orange
+            %p.universal Universal
+            %p.pathe Pathé
+            %p.orange Orange
 
-          .span3
-            #contact.page-header
+          #contact.span3.offset1
+            .page-header
               %h1 Contact
             %h2
               Oahu is currently
@@ -102,8 +99,8 @@
               We plan on opening access in the near future. In the meantime, you can get more information by contacting us.
             .contact
               %a.btn.btn-large{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
-          .span3.offset1
-            #jobs.page-header
+          #jobs.span3.offset1
+            .page-header
               %h1 Jobs
             %h2 We're  currently looking for : 
             %p

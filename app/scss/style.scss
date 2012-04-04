@@ -10,15 +10,16 @@ $text : #4f4f4f;
 $orange: #f55405;
 $ice: #adb8c0;
 $light_ice:#d6dbdf;
-body{
-  color:$text;
-  font-size:13px;
+body, p{
+  color:lighten($text, 15%);
+  font-size:14px;
   font-family:'AvenirLTStd55Roman';
-  // text-rendering:optimizelegibility;
-  // -webkit-font-smoothing:antialiased;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight:normal;
+  color:$text;
 }
 h2{
   font-weight:normal;
@@ -230,6 +231,11 @@ section{
   }
 }
 
+#jobs{
+  ul{
+    margin-left:0;
+  }
+}
 .logged_in{
   display:none;
 }

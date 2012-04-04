@@ -2,14 +2,17 @@
   background: url('../img/logos-s67b9c1f3d6.png') no-repeat;
 }
 
-body {
-  color: #4f4f4f;
-  font-size: 13px;
+body, p {
+  color: #757575;
+  font-size: 14px;
   font-family: 'AvenirLTStd55Roman';
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  color: #4f4f4f;
 }
 
 h2 {
@@ -194,6 +197,10 @@ a.btn {
   width: logos-sprite-width(orange);
   width: 100px;
   height: 80px;
+}
+
+#jobs ul {
+  margin-left: 0;
 }
 
 .logged_in {

@@ -25,41 +25,23 @@
             <span class='icon-bar'></span>
             <span class='icon-bar'></span>
           </a>
-          <div class='nav-collapse'>
-            <ul class='nav secondary-nav pull-right'>
-              <li class='logged_in dropdown' data-oahu-display='connected'>
-                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                  <span class='oahu_username' data-oahu-bind='name'></span>
-                  <span class='oahu_userpicture'></span>
-                  <b class='caret'></b>
-                </a>
-                <ul class='dropdown-menu'>
-                  <li>
-                    <a class='logout_btn' data-oahu-action='disconnect' data-oahu-display='connected' href='#'>Logout</a>
-                  </li>
-                </ul>
-              </li>
-              <li class='logged_out login_status' data-oahu-display='disconnected'>
-                <a class='login_btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook' href='#'>Login</a>
-              </li>
-            </ul>
-            <ul class='nav pull-right'>
-              <li>
-                <a href='#product'>Product</a>
-              </li>
-              <li>
-                <a href='clients'>Clients</a>
-              </li>
-              <li>
-                <a href='contact'>Contact</a>
-              </li>
-              <li>
-                <a href='jobs'>Jobs</a>
-              </li>
-              <!-- %li -->
-              <!-- %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr -->
-            </ul>
-          </div>
+          <ul class='nav pull-right'>
+            <li>
+              <a href='#product'>Product</a>
+            </li>
+            <li>
+              <a href='clients'>Clients</a>
+            </li>
+            <li>
+              <a href='contact'>Contact</a>
+            </li>
+            <li>
+              <a href='jobs'>Jobs</a>
+            </li>
+            <li>
+              <a class='contact' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -90,55 +72,27 @@
           </div>
           <div class='span3 offset1'>
             <h2>Simple to use</h2>
-            Publish our pre-built apps to instantly offer your fans Quizzes, Instant Wins, branded pages and more. You can build entire campaigns without a single line of code
+            <p>
+              Publish our pre-built apps to instantly offer your fans Quizzes, Instant Wins, branded pages and more. You can build entire campaigns without a single line of code
+            </p>
           </div>
           <div class='span3 offset1'>
             <h2>Full service</h2>
-            We handle the media, games mechanics, and user generated contents that make your campaigns richer and more compelling.
+            <p>We handle the media, games mechanics, and user generated contents that make your campaigns richer and more compelling.</p>
           </div>
         </div>
         <div class='row'>
           <div class='span3'>
             <h2>Rich realtime api</h2>
-            Use a robust set of rich realtime push components to create even more ambitious campaigns at a fraction of the time and cost.
+            <p>Use a robust set of rich realtime push components to create even more ambitious campaigns at a fraction of the time and cost.</p>
           </div>
           <div class='span3 offset1'>
             <h2>Complete Metrics</h2>
-            With integrated metrics, Oahu enables you to get a precise overview of how your campaign’s doing, who’s playing, who’s sharing and much, much more.
+            <p>With integrated metrics, Oahu enables you to get a precise overview of how your campaign’s doing, who’s playing, who’s sharing and much, much more.</p>
           </div>
           <div class='span3 offset1'>
             <h2>Cross campaign marketing</h2>
-            Most importantly, We do all of this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick
-          </div>
-        </div>
-      </section>
-      <section id='testdrive'>
-        <div class='page-header'>
-          <h1>Test Oahu right here</h1>
-        </div>
-        <div class='row'>
-          <div class='span4'>
-            <h2>Connect and test out the main Oahu features</h2>
-            You will be asked to connect with Facebook, and upon accepting, will be immediately connected, you will see which ones of your friends are connected too, and be able to get a feel of the ease of use of our platform.
-            <div class='connect'>
-              <a class='btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook'>Connect with Facebook</a>
-            </div>
-          </div>
-          <div class='span4 logged_in' data-oahu-display='connected'>
-            <h2>You're already using it !</h2>
-            Welcome,
-            <span data-oahu-bind='name'></span>
-            <br />
-            <span class='oahu_friendscount'>0</span>
-            of your friends are using Oahu
-            <div class='share'>
-              <a class='btn' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share your love</a>
-              <a class='btn' data-oahu-action='disconnect'>Disconnect</a>
-            </div>
-          </div>
-          <div class='span4 logged_in' data-oahu-display='connected'>
-            <h2>Your recent activity</h2>
-            <div class='activity' data-oahu-bind='activity'></div>
+            <p>Most importantly, We do all of this and more with an easy to use single sign-on, that enables your fans to enrich their profile campaign after campaign, allowing you to offer them precisely what makes them tick</p>
           </div>
         </div>
       </section>
@@ -163,9 +117,9 @@
               <br />
               a subscription service.
             </h2>
-            We plan on opening it to public in the future, but for now you can get a demo by contacting us. We’ll be sure to get back to you !
-            <br />
-            <br />
+            <p>
+              We plan on opening access in the near future. In the meantime, you can get more information by contacting us.
+            </p>
             <div class='contact'>
               <a class='btn btn-large' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
             </div>
@@ -175,10 +129,12 @@
               <h1>Jobs</h1>
             </div>
             <h2>We're  currently looking for :</h2>
-            <ul>
-              <li>A Front-end developer who knows CSS3 and browsers perfectly</li>
-              <li>A Chief of product with a keen eye for detail and insatiable need for perfection</li>
-            </ul>
+            <p>
+              <ul>
+                <li>A Front-end developer who knows CSS3 and browsers perfectly</li>
+                <li>A Product Manager with a keen eye for detail and insatiable need for perfection</li>
+              </ul>
+            </p>
             <div class='jobs'>
               <a class='btn btn-large' href='mailto:jobs@oahu.fr'>jobs@oahu.fr</a>
             </div>
@@ -191,16 +147,8 @@
           document.createElement('header');
         //]]>
       </script>
-      <script type='text/javascript'>
-        //<![CDATA[
-          OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
-        //]]>
-      </script>
       <script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
       <script src='/assets/vendor/bootstrap.js'></script>
-      <script src='//app.oahu.fr/assets/oahu.js'></script>
-      <script src='//app.oahu.fr/assets/oahu-apps.js'></script>
-      <script src='/assets/js/app.js'></script>
     </div>
   </body>
 </html>

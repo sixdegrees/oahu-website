@@ -12,7 +12,7 @@ $ice: #adb8c0;
 $light_ice:#d6dbdf;
 body{
   color:$text;
-  font-size:14px;
+  font-size:13px;
   font-family:'AvenirLTStd55Roman';
   text-rendering:optimizelegibility;
   -webkit-font-smoothing:antialiased;
@@ -123,7 +123,6 @@ h1{
 .row{
   margin-bottom:3em;
   color:lighten($text, 15%);
-  font-size:14px;
   h2{
     color:$text;
     line-height:17px;
@@ -146,6 +145,8 @@ a.btn{
 }
 
 #product{
+  background:image-url('separator.png') top center no-repeat;
+  padding-top:35px;
   .row{
     font-size:14px;
     h2{
@@ -154,8 +155,6 @@ a.btn{
 }
 
 section{
-  background:image-url('separator.png') top center no-repeat;
-  padding-top:35px;
 }
 
 

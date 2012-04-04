@@ -4,7 +4,7 @@
 
 body {
   color: #4f4f4f;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'AvenirLTStd55Roman';
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -107,7 +107,6 @@ h1 em {
 .row {
   margin-bottom: 3em;
   color: #757575;
-  font-size: 14px;
 }
 .row h2 {
   color: #4f4f4f;
@@ -132,13 +131,12 @@ a.btn {
   border: 1px solid #d6dbdf;
 }
 
-#product .row {
-  font-size: 14px;
-}
-
-section {
+#product {
   background: url('../img/separator.png?1333464272') top center no-repeat;
   padding-top: 35px;
+}
+#product .row {
+  font-size: 14px;
 }
 
 ul.clients {

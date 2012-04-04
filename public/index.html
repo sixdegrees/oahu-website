@@ -25,6 +25,23 @@
             <span class='icon-bar'></span>
           </a>
           <div class='nav-collapse'>
+            <ul class='nav secondary-nav pull-right'>
+              <li class='logged_in dropdown' data-oahu-display='connected'>
+                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                  <span class='oahu_username' data-oahu-bind='name'></span>
+                  <span class='oahu_userpicture'></span>
+                  <b class='caret'></b>
+                </a>
+                <ul class='dropdown-menu'>
+                  <li>
+                    <a class='logout_btn' data-oahu-action='disconnect' data-oahu-display='connected' href='#'>Logout</a>
+                  </li>
+                </ul>
+              </li>
+              <li class='logged_out login_status' data-oahu-display='disconnected'>
+                <a class='login_btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook' href='#'>Login</a>
+              </li>
+            </ul>
             <ul class='nav pull-right'>
               <li>
                 <a href='#product'>Product</a>
@@ -110,6 +127,41 @@
             <h2>Cross campaign</h2>
             <p>Most importantly, We do all of this and more with an easy to use single sign-on, that authenticates your fans on all your platforms, enriches their profile across campaigns, allowing you to offer them precisely what makes them tick.</p>
             <h4>The more you use Oahu, the more value your audience gains from it. Reward them for their engagement at a global scale, and make them ask for more !</h4>
+          </div>
+        </div>
+      </section>
+      <section data-oahu-display='connected' id='testdrive'>
+        <div class='page-header'>
+          <h1>Test Oahu right here</h1>
+        </div>
+        <div class='row'>
+          <div class='span4'>
+            <h2>Test out the main Oahu features</h2>
+            <p>
+              Since you're connected to Oahu, here's a few simple features you can immediately test out.
+              <br />
+              Many more are available.
+            </p>
+            <div class='connect'>
+              <a class='btn' data-oahu-action='disconnect' data-oahu-display='connected'>Disconnect</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>
+              Welcome,
+              <span class='username' data-oahu-bind='name'></span>
+            </h2>
+            <p>
+              <span class='oahu_friendscount'>0</span>
+              of your friends are using Oahu
+            </p>
+            <div class='share'>
+              <a class='btn' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share your love</a>
+            </div>
+          </div>
+          <div class='span4 logged_in' data-oahu-display='connected'>
+            <h2>Your recent activity</h2>
+            <div class='activity' data-oahu-bind='activity'></div>
           </div>
         </div>
       </section>
@@ -202,8 +254,15 @@
           document.createElement('header');
         //]]>
       </script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
+        //]]>
+      </script>
       <script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-      <script src='/assets/vendor/bootstrap/bootstrap.js'></script>
+      <script src='/assets/vendor/bootstrap.js'></script>
+      <script src='//app.oahu.fr/assets/oahu.js'></script>
+      <script src='//app.oahu.fr/assets/oahu-apps.js'></script>
       <script src='/assets/js/app.js'></script>
     </div>
   </body>

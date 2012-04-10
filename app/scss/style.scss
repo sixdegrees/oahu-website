@@ -170,7 +170,7 @@ h4{
     text-transform:uppercase;
   }
   a.btn{
-    margin-top:20px;
+    margin-bottom:20px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -189,7 +189,6 @@ a.btn{
   background:lighten($ice,25%);
   @include box-shadow(0 0 3px transparentize($ice,0.1) inset);  
   padding:10px;
-  display:block;
 }
 
 #product{
@@ -292,4 +291,10 @@ section{
 }
 #social{
   margin-top: 10px;
+}
+.oahu{
+  .o_shares{
+    position:static;
+    float:none;
+  }
 }

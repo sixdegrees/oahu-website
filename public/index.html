@@ -9,6 +9,8 @@
     <link href='/favicon.ico' rel='shortcut icon' />
     <link href='/apple-touch-icon.png' rel='apple-touch-icon' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//app.oahu.fr/assets/oahu.css' rel='stylesheet' />
+    <link href='//app.oahu.fr/assets/oahu-apps.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap/bootstrap.min.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap/bootstrap-responsive.min.css' rel='stylesheet' />
     <link href='/assets/css/style.css' rel='stylesheet' />
@@ -25,23 +27,17 @@
             <span class='icon-bar'></span>
           </a>
           <div class='nav-collapse'>
-            <ul class='nav secondary-nav pull-right'>
-              <li class='logged_in dropdown' data-oahu-display='connected'>
-                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                  <span class='oahu_username' data-oahu-bind='name'></span>
-                  <span class='oahu_userpicture'></span>
-                  <b class='caret'></b>
-                </a>
-                <ul class='dropdown-menu'>
-                  <li>
-                    <a class='logout_btn' data-oahu-action='disconnect' data-oahu-display='connected' href='#'>Logout</a>
-                  </li>
-                </ul>
-              </li>
-              <li class='logged_out login_status' data-oahu-display='disconnected'>
-                <a class='login_btn' data-oahu-action='connect' data-oahu-display='disconnected' data-oahu-provider='facebook' href='#'>Login</a>
-              </li>
-            </ul>
+            <!-- %ul.nav.secondary-nav.pull-right -->
+            <!-- %li.logged_in.dropdown{"data-oahu-display"=>'connected'} -->
+            <!-- %a.dropdown-toggle{:href=>"#",  "data-toggle"=>"dropdown"} -->
+            <!-- %span.oahu_username{"data-oahu-bind"=>'name'} -->
+            <!-- %span.oahu_userpicture -->
+            <!-- %b.caret -->
+            <!-- %ul.dropdown-menu -->
+            <!-- %li -->
+            <!-- %a.logout_btn{"data-oahu-display"=>'connected', "data-oahu-action"=>"disconnect", :href=>"#"} Logout -->
+            <!-- %li.logged_out.login_status{"data-oahu-display"=>'disconnected'} -->
+            <!-- %a.login_btn{:href=>'#', "data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Login -->
             <ul class='nav pull-right'>
               <li>
                 <a href='#product'>Product</a>
@@ -128,49 +124,6 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class='row'>
-          <div class='span3 clearfix' id='clients'>
-            <div class='page-header'>
-              <h1>Clients</h1>
-            </div>
-            <p class='universal'>Universal</p>
-            <p class='pathe'>Pathé</p>
-            <p class='orange'>Orange</p>
-          </div>
-          <div class='span3 offset1' id='contact'>
-            <div class='page-header'>
-              <h1>Contact</h1>
-            </div>
-            <h2>
-              Oahu is currently
-              <br />
-              a private service.
-            </h2>
-            <p>
-              We plan on opening access to more clients in the near future. In the meantime, you can get more information by contacting us.
-            </p>
-            <div class='contact'>
-              <a class='btn btn-large' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
-            </div>
-          </div>
-          <div class='span3 offset1' id='jobs'>
-            <div class='page-header'>
-              <h1>Jobs</h1>
-            </div>
-            <h2>We're  currently looking for :</h2>
-            <p>
-              <ul>
-                <li>A front-end developer who knows CSS3, responsive design and Coffeescript perfectly.</li>
-                <li>A product manager with a strong focus on detail and user experience</li>
-              </ul>
-            </p>
-            <div class='jobs'>
-              <a class='btn btn-large' href='mailto:jobs@oahu.fr'>jobs@oahu.fr</a>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id='showcase'>
         <div class='page-header'>
           <h1>
@@ -241,44 +194,91 @@
           <a class='carousel-control right' data-slide='next' href='#carousel'></a>
         </div>
       </section>
-      <section data-oahu-display='connected' id='testdrive'>
+      <section id='share'>
         <div class='page-header'>
-          <h1>
-            Testdrive
-            <small>Oahu as a user</small>
-          </h1>
+          <h1>Share</h1>
         </div>
-        <div class='row'>
+        <div class='row oahu'>
           <div class='span4'>
-            <h2>Test out the main Oahu features</h2>
-            <p>
-              Since you're connected to Oahu, here's a few simple features you can immediately test out.
-              <br />
-              Many more are available.
-            </p>
-            <div class='connect'>
-              <a class='btn' data-oahu-action='disconnect' data-oahu-display='connected'>Disconnect</a>
-            </div>
+            <a class='oahu_btn btn facebook' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share on Facebook</a>
+            <a class='oahu_btn btn twitter' data-oahu-action='ui.share' data-oahu-provider='twitter'>Share on Twitter</a>
           </div>
-          <div class='span4 logged_in' data-oahu-display='connected'>
-            <h2>
-              Welcome,
-              <span class='username' data-oahu-bind='name'></span>
-            </h2>
-            <p>
-              <span class='oahu_friendscount'>0</span>
-              of your friends are using Oahu
-            </p>
-            <div class='share'>
-              <a class='btn' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share your love</a>
-            </div>
+          <div class='span4'>
+            <div class='fb-like' data-font='arial' data-height='100' data-href='https://www.facebook.com/oahuapp' data-send='true' data-show-faces='true' data-width='400' style='height:80px;'></div>
           </div>
-          <div class='span4 logged_in' data-oahu-display='connected'>
-            <h2>Your recent activity</h2>
-            <div class='activity' data-oahu-bind='activity'></div>
+          <div class='span4'>
+            <a class='twitter-follow-button' data-show-count='false' data-size='large' href='https://twitter.com/_oahu'>Follow @_oahu</a>
+            <a class='twitter-mention-button' data-size='large' href='https://twitter.com/intent/tweet?screen_name=_oahu&amp;text=How%20are%20you%20doing%2C%20'>Tweet to @_oahu</a>
           </div>
         </div>
       </section>
+      <section id='about'>
+        <div class='row'>
+          <div class='span3 clearfix' id='clients'>
+            <div class='page-header'>
+              <h1>Clients</h1>
+            </div>
+            <p class='universal'>Universal</p>
+            <p class='pathe'>Pathé</p>
+            <p class='orange'>Orange</p>
+          </div>
+          <div class='span3 offset1' id='contact'>
+            <div class='page-header'>
+              <h1>Contact</h1>
+            </div>
+            <h2>
+              Oahu is currently
+              <br />
+              a private service.
+            </h2>
+            <p>
+              We plan on opening access to more clients in the near future. In the meantime, you can get more information by contacting us.
+            </p>
+            <div class='contact'>
+              <a class='btn btn-large' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
+            </div>
+          </div>
+          <div class='span3 offset1' id='jobs'>
+            <div class='page-header'>
+              <h1>Jobs</h1>
+            </div>
+            <h2>We're  currently looking for :</h2>
+            <p>
+              <ul>
+                <li>A front-end developer who knows CSS3, responsive design and Coffeescript perfectly.</li>
+                <li>A product manager with a strong focus on detail and user experience</li>
+              </ul>
+            </p>
+            <div class='jobs'>
+              <a class='btn btn-large' href='mailto:jobs@oahu.fr'>jobs@oahu.fr</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- %section#testdrive{"data-oahu-display"=>'connected'} -->
+      <!-- .page-header -->
+      <!-- %h1 -->
+      <!-- Testdrive -->
+      <!-- %small Oahu as a user -->
+      <!-- .row -->
+      <!-- .span4 -->
+      <!-- %h2 Test out the main Oahu features -->
+      <!-- %p -->
+      <!-- Since you're connected to Oahu, here's a few simple features you can immediately test out. -->
+      <!-- %br -->
+      <!-- Many more are available. -->
+      <!-- .connect -->
+      <!-- %a.btn{"data-oahu-display"=>'connected', "data-oahu-action"=>'disconnect'} Disconnect -->
+      <!-- .span4.logged_in{"data-oahu-display"=>'connected'} -->
+      <!-- %h2 -->
+      <!-- Welcome, -->
+      <!-- %span.username{"data-oahu-bind"=>'name'} -->
+      <!-- %p -->
+      <!-- %span.oahu_friendscount 0 -->
+      <!-- of your friends are using Oahu -->
+      <!-- .span4.logged_in{"data-oahu-display"=>'connected'} -->
+      <!-- %h2 Your recent activity -->
+      <!-- .activity{"data-oahu-bind"=>'activity'} -->
       <script type='text/javascript'>
         //<![CDATA[
           document.createElement('section');

@@ -199,7 +199,7 @@ h4 {
   text-transform: uppercase;
 }
 .row a.btn {
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -222,7 +222,6 @@ a.btn {
   -o-box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
   box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
   padding: 10px;
-  display: block;
 }
 
 #product {
@@ -315,4 +314,9 @@ a.btn {
 
 #social {
   margin-top: 10px;
+}
+
+.oahu .o_shares {
+  position: static;
+  float: none;
 }

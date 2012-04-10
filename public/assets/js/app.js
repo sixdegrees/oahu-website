@@ -1,36 +1,28 @@
 (function() {
-  var get_activity, get_friends,
-    _this = this;
-
-  get_friends = function() {
-    return Oahu.app.getFriends({}, function(friends) {
-      var l;
-      l = friends.length ? friends.length : "none";
-      return $('.oahu_friendscount').html(l);
-    });
-  };
-
-  get_activity = function() {
-    return $('[data-oahu-bind="activity"]').each(function(i, e) {
-      var t,
-        _this = this;
-      t = $(this);
-      return Oahu.ui.feed({}, function(activity) {
-        return t.html(activity.markup);
-      });
-    });
-  };
 
   $(function() {
-    var OahuInitCallback, _oahu_config;
+    var OahuInitCallback, get_activity, get_friends, _oahu_config,
+      _this = this;
     $('.carousel').carousel();
+    get_friends = function() {};
+    get_activity = function() {
+      return $('[data-oahu-bind="activity"]').each(function(i, e) {
+        var t,
+          _this = this;
+        t = $(this);
+        return Oahu.ui.feed({}, function(activity) {
+          return t.html(activity.markup);
+        });
+      });
+    };
     OahuInitCallback = function(e) {
+      console.log("-------------------");
       $('.oahu_username').html(Oahu.account.name);
-      get_activity();
-      get_friends();
-      return window.OahuWidget = new Oahu.Apps.Widget({}, {
+      window.OahuWidget = new Oahu.Apps.Widget({}, {
         el: "#page"
       });
+      get_activity();
+      return get_friends();
     };
     $("[data-oahu-display]").each(function(i, e) {
       var s, t,
@@ -55,12 +47,29 @@
     });
     _oahu_config = {
       appId: "f9daf08f500855a2c8e13c07",
-      verbose: false,
-      debug: false,
+      verbose: true,
+      debug: true,
+      facebook: {
+        "appId": '135589799816220',
+        "status": true,
+        "cookie": true,
+        "xfbml": true,
+        "oauth": true,
+        "logging": true
+      },
       ga: {
         code: "UA-489370-52"
       }
     };
+    (function(d, t) {
+      var s, se;
+      se = d.createElement(t);
+      se.type = "text/javascript";
+      s = d.getElementsByTagName(t)[0];
+      se.async = 1;
+      se.src = "//platform.twitter.com/widgets.js";
+      return s.parentNode.insertBefore(se, s);
+    })(document, 'script');
     return Oahu.init(_oahu_config, OahuInitCallback);
   });
 

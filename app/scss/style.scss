@@ -52,7 +52,6 @@ h4{
   }
   .brand{
     float: left;
-    margin-left: 10px;
     margin-top:10px;
     @include logos-sprite(oahu);
     $height: logos-sprite-height(oahu);

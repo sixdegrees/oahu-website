@@ -94,6 +94,7 @@ h4 {
 }
 .navbar .brand {
   float: left;
+  margin-left: 0px;
   margin-top: 10px;
   background-position: 0 0;
   text-indent: -999px;
@@ -310,4 +311,8 @@ a.btn {
 }
 .carousel:hover .carousel-control {
   opacity: 0.5;
+}
+
+#social {
+  margin-top: 10px;
 }

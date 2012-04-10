@@ -52,6 +52,7 @@ h4{
   }
   .brand{
     float: left;
+    margin-left: 0px;
     margin-top:10px;
     @include logos-sprite(oahu);
     $height: logos-sprite-height(oahu);
@@ -288,4 +289,7 @@ section{
       opacity:0.5;
     }
   }
+}
+#social{
+  margin-top: 10px;
 }

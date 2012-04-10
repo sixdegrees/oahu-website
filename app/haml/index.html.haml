@@ -38,8 +38,6 @@
                 %a{:href=>'#jobs'} Jobs
               %li
                 %a.contact{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
-
-
     #page.container
       .hero-unit
         %h1
@@ -47,39 +45,10 @@
           %em anywhere
         %h2
           Oahu creates long term, meaningful relationships between you and your community
-<<<<<<< HEAD
         %h3
           Oahu is an integrated marketing platform that enables you to build richer, more engaging campaigns.
           %br
           When using Oahu, you're assured that your campaign is optimized for engagement.
-=======
-          
-      %section#showcase
-        .row
-          .span12
-            #carousel.carousel
-              .carousel-inner
-                .item
-                  %h3 American Pie 4
-                  %img{:src=>'assets/img/screens/screen_01.jpg'}
-
-                .item
-                  %h3 Sur la piste du Marsupilami
-                  %img{:src=>'assets/img/screens/screen_02.jpg'}
-
-                .item
-                  %h3 Battleship
-                  %img{:src=>'assets/img/screens/screen_03.jpg'}
-
-                .item
-                  %h3 Pathé Films
-                  %img{:src=>'assets/img/screens/screen_05.jpg'}
-                .item
-                  %h3 Universal Pictures Film France
-                  %img{:src=>'assets/img/screens/screen_06.jpg'}
-              %a.carousel-control.left{:href=>'#carousel', "data-slide"=>'prev'}
-              %a.carousel-control.right{:href=>'#carousel', "data-slide"=>'next'}
->>>>>>> move stuff around, make carousel
       %section#product
         .page-header
           %h1 Product
@@ -120,14 +89,50 @@
 
       %section
         .row
-          #clients.span3.clearfix
+          #clients.span2.clearfix
             .page-header
               %h1 Clients
             %p.universal Universal
             %p.pathe Pathé
             %p.orange Orange
 
-          #contact.span3.offset1
+          #showcase.span6
+            .page-header
+              %h1
+                Showcase
+                %small a sample of campaigns and sites using Oahu
+            #carousel.carousel
+              .carousel-inner
+                .item
+                  %h2 American Pie 4
+                  %img{:src=>'assets/img/screens/screen_01.jpg'}
+
+                .item
+                  %h2 Sur la piste du Marsupilami
+                  %img{:src=>'assets/img/screens/screen_02.jpg'}
+
+                .item
+                  %h2 Battleship
+                  %img{:src=>'assets/img/screens/screen_03.jpg'}
+
+                .item
+                  %h2 Pathé Films Portal
+                  %img{:src=>'assets/img/screens/screen_05.jpg'}
+
+                .item
+                  %h2 Universal Pictures Film France Portail
+                  %img{:src=>'assets/img/screens/screen_06.jpg'}
+
+                .item
+                  %h2 Le Prénom
+                  %img{:src=>'assets/img/screens/screen_07.jpg'}
+
+                .item
+                  %h2 Twixt
+                  %img{:src=>'assets/img/screens/screen_08.jpg'}
+              %a.carousel-control.left{:href=>'#carousel', "data-slide"=>'prev'}
+              %a.carousel-control.right{:href=>'#carousel', "data-slide"=>'next'}
+          #contact.span3
             .page-header
               %h1 Contact
             %h2
@@ -138,7 +143,6 @@
               We plan on opening access to more clients in the near future. In the meantime, you can get more information by contacting us.
             .contact
               %a.btn.btn-large{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
-          #jobs.span3.offset1
             .page-header
               %h1 Jobs
             %h2 We're  currently looking for : 

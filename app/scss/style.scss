@@ -255,45 +255,28 @@ section{
   overflow:auto;
 }
 
-<<<<<<< HEAD
 #carousel{
   background-color:lighten(white, 25%);
+  margin-bottom:0;
   .carousel-control{
     opacity:0;
-    @include transition(opacity, 0.5s)
+    @include transition(opacity 0.5s)
   }
-  margin-bottom:0;
   .item{
-    img{
-      display:block;
-      margin:0 auto;
-=======
-
-
-#carousel{
-  margin-bottom:0;
-  .item{
-    h3{
-      display:none;
-    }
     background-color:lighten(white, 25%);
     @include border-radius(5px);
     img{
       display:block;
       margin:0 auto;
       @include box-shadow(0 0 10px rgba(0,0,0,0.4));
->>>>>>> move stuff around, make carousel
     }
   }
   img{
-    max-height:400px;
+    max-width:100%;
   }
-<<<<<<< HEAD
   &:hover{
     .carousel-control{
       opacity:0.5;
     }
   }
-=======
->>>>>>> move stuff around, make carousel
 }

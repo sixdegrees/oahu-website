@@ -9,6 +9,8 @@
     <link href='/favicon.ico' rel='shortcut icon' />
     <link href='/apple-touch-icon.png' rel='apple-touch-icon' />
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='//app.oahu.fr/assets/oahu.css' rel='stylesheet' />
+    <link href='//app.oahu.fr/assets/oahu-apps.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap/bootstrap.min.css' rel='stylesheet' />
     <link href='/assets/vendor/bootstrap/bootstrap-responsive.min.css' rel='stylesheet' />
     <link href='/assets/css/style.css' rel='stylesheet' />
@@ -25,6 +27,17 @@
             <span class='icon-bar'></span>
           </a>
           <div class='nav-collapse'>
+            <!-- %ul.nav.secondary-nav.pull-right -->
+            <!-- %li.logged_in.dropdown{"data-oahu-display"=>'connected'} -->
+            <!-- %a.dropdown-toggle{:href=>"#",  "data-toggle"=>"dropdown"} -->
+            <!-- %span.oahu_username{"data-oahu-bind"=>'name'} -->
+            <!-- %span.oahu_userpicture -->
+            <!-- %b.caret -->
+            <!-- %ul.dropdown-menu -->
+            <!-- %li -->
+            <!-- %a.logout_btn{"data-oahu-display"=>'connected', "data-oahu-action"=>"disconnect", :href=>"#"} Logout -->
+            <!-- %li.logged_out.login_status{"data-oahu-display"=>'disconnected'} -->
+            <!-- %a.login_btn{:href=>'#', "data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Login -->
             <ul class='nav pull-right'>
               <li>
                 <a href='#product'>Product</a>
@@ -111,9 +124,97 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id='showcase'>
+        <div class='page-header'>
+          <h1>
+            Showcase
+            <small>a sample of campaigns and sites using Oahu</small>
+          </h1>
+        </div>
+        <div class='carousel row' id='carousel'>
+          <div class='carousel-inner'>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_01.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>American Pie 4</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_02.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Sur la piste du Marsupilami</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_03.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Battleship</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_05.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Pathé Films Portal</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_06.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Universal Pictures Film France Portail</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_07.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Le Prénom</h2>
+              </div>
+            </div>
+            <div class='item'>
+              <div class='span8'>
+                <img src='assets/img/screens/screen_08.jpg' />
+              </div>
+              <div class='span4'>
+                <h2>Twixt</h2>
+              </div>
+            </div>
+          </div>
+          <a class='carousel-control left' data-slide='prev' href='#carousel'></a>
+          <a class='carousel-control right' data-slide='next' href='#carousel'></a>
+        </div>
+      </section>
+      <section id='share'>
+        <div class='page-header'>
+          <h1>Share</h1>
+        </div>
+        <div class='row oahu'>
+          <div class='span4'>
+            <a class='oahu_btn btn facebook' data-oahu-action='ui.share' data-oahu-provider='facebook'>Share on Facebook</a>
+            <a class='oahu_btn btn twitter' data-oahu-action='ui.share' data-oahu-provider='twitter'>Share on Twitter</a>
+          </div>
+          <div class='span4'>
+            <div class='fb-like' data-font='arial' data-height='100' data-href='https://www.facebook.com/oahuapp' data-send='true' data-show-faces='true' data-width='400' style='height:80px;'></div>
+          </div>
+          <div class='span4'>
+            <a class='twitter-follow-button' data-show-count='false' data-size='large' href='https://twitter.com/_oahu'>Follow @_oahu</a>
+            <a class='twitter-mention-button' data-size='large' href='https://twitter.com/intent/tweet?screen_name=_oahu&amp;text=How%20are%20you%20doing%2C%20'>Tweet to @_oahu</a>
+          </div>
+        </div>
+      </section>
+      <section id='about'>
         <div class='row'>
-          <div class='span2 clearfix' id='clients'>
+          <div class='span3 clearfix' id='clients'>
             <div class='page-header'>
               <h1>Clients</h1>
             </div>
@@ -121,49 +222,7 @@
             <p class='pathe'>Pathé</p>
             <p class='orange'>Orange</p>
           </div>
-          <div class='span6' id='showcase'>
-            <div class='page-header'>
-              <h1>
-                Showcase
-                <small>a sample of campaigns and sites using Oahu</small>
-              </h1>
-            </div>
-            <div class='carousel' id='carousel'>
-              <div class='carousel-inner'>
-                <div class='item'>
-                  <h2>American Pie 4</h2>
-                  <img src='assets/img/screens/screen_01.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Sur la piste du Marsupilami</h2>
-                  <img src='assets/img/screens/screen_02.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Battleship</h2>
-                  <img src='assets/img/screens/screen_03.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Pathé Films Portal</h2>
-                  <img src='assets/img/screens/screen_05.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Universal Pictures Film France Portail</h2>
-                  <img src='assets/img/screens/screen_06.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Le Prénom</h2>
-                  <img src='assets/img/screens/screen_07.jpg' />
-                </div>
-                <div class='item'>
-                  <h2>Twixt</h2>
-                  <img src='assets/img/screens/screen_08.jpg' />
-                </div>
-              </div>
-              <a class='carousel-control left' data-slide='prev' href='#carousel'></a>
-              <a class='carousel-control right' data-slide='next' href='#carousel'></a>
-            </div>
-          </div>
-          <div class='span3' id='contact'>
+          <div class='span3 offset1' id='contact'>
             <div class='page-header'>
               <h1>Contact</h1>
             </div>
@@ -178,6 +237,8 @@
             <div class='contact'>
               <a class='btn btn-large' href='mailto:contact@oahu.fr'>contact@oahu.fr</a>
             </div>
+          </div>
+          <div class='span3 offset1' id='jobs'>
             <div class='page-header'>
               <h1>Jobs</h1>
             </div>
@@ -194,14 +255,45 @@
           </div>
         </div>
       </section>
+      <!-- %section#testdrive{"data-oahu-display"=>'connected'} -->
+      <!-- .page-header -->
+      <!-- %h1 -->
+      <!-- Testdrive -->
+      <!-- %small Oahu as a user -->
+      <!-- .row -->
+      <!-- .span4 -->
+      <!-- %h2 Test out the main Oahu features -->
+      <!-- %p -->
+      <!-- Since you're connected to Oahu, here's a few simple features you can immediately test out. -->
+      <!-- %br -->
+      <!-- Many more are available. -->
+      <!-- .connect -->
+      <!-- %a.btn{"data-oahu-display"=>'connected', "data-oahu-action"=>'disconnect'} Disconnect -->
+      <!-- .span4.logged_in{"data-oahu-display"=>'connected'} -->
+      <!-- %h2 -->
+      <!-- Welcome, -->
+      <!-- %span.username{"data-oahu-bind"=>'name'} -->
+      <!-- %p -->
+      <!-- %span.oahu_friendscount 0 -->
+      <!-- of your friends are using Oahu -->
+      <!-- .span4.logged_in{"data-oahu-display"=>'connected'} -->
+      <!-- %h2 Your recent activity -->
+      <!-- .activity{"data-oahu-bind"=>'activity'} -->
       <script type='text/javascript'>
         //<![CDATA[
           document.createElement('section');
           document.createElement('header');
         //]]>
       </script>
+      <script type='text/javascript'>
+        //<![CDATA[
+          OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
+        //]]>
+      </script>
       <script src='//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
       <script src='/assets/vendor/bootstrap/bootstrap.js'></script>
+      <script src='//app.oahu.fr/assets/oahu.js'></script>
+      <script src='//app.oahu.fr/assets/oahu-apps.js'></script>
       <script src='/assets/js/app.js'></script>
     </div>
   </body>

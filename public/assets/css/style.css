@@ -94,6 +94,7 @@ h4 {
 }
 .navbar .brand {
   float: left;
+  margin-left: 0px;
   margin-top: 10px;
   background-position: 0 0;
   text-indent: -999px;
@@ -198,7 +199,7 @@ h4 {
   text-transform: uppercase;
 }
 .row a.btn {
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -214,7 +215,13 @@ a.btn {
   box-shadow: none;
   font-family: 'AvenirLTStd55Roman';
   color: #738694;
-  border: 1px solid #d6dbdf;
+  border: none;
+  background: #f5f6f7;
+  -moz-box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
+  -webkit-box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
+  -o-box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
+  box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
+  padding: 10px;
 }
 
 #product {
@@ -270,37 +277,46 @@ a.btn {
   overflow: auto;
 }
 
-#carousel {
+.carousel {
   background-color: white;
   margin-bottom: 0;
 }
-#carousel .carousel-control {
+.carousel .carousel-control {
   opacity: 0;
   -moz-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-#carousel .item {
-  background-color: white;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
+.carousel .item {
+  height: 420px;
+  overflow: hidden;
 }
-#carousel .item img {
+.carousel .item h2 {
+  font-size: 18px;
+  font-family: 'AvenirLTStd55Roman';
+}
+.carousel .item img {
   display: block;
   margin: 0 auto;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(173, 184, 192, 0.8);
+  -webkit-box-shadow: 0 0 5px rgba(173, 184, 192, 0.8);
+  -o-box-shadow: 0 0 5px rgba(173, 184, 192, 0.8);
+  box-shadow: 0 0 5px rgba(173, 184, 192, 0.8);
 }
-#carousel img {
+.carousel img {
+  float: left;
   max-width: 100%;
 }
-#carousel:hover .carousel-control {
+.carousel:hover .carousel-control {
   opacity: 0.5;
+}
+
+#social {
+  margin-top: 10px;
+}
+
+.oahu .o_shares {
+  position: static;
+  float: none;
 }

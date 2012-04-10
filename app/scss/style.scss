@@ -52,6 +52,7 @@ h4{
   }
   .brand{
     float: left;
+    margin-left: 0px;
     margin-top:10px;
     @include logos-sprite(oahu);
     $height: logos-sprite-height(oahu);
@@ -169,7 +170,7 @@ h4{
     text-transform:uppercase;
   }
   a.btn{
-    margin-top:20px;
+    margin-bottom:20px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -183,7 +184,11 @@ a.btn{
   @include box-shadow(none);
   font-family:'AvenirLTStd55Roman';
   color:darken($ice, 20%);
-  border:1px solid $light_ice;
+  // border:1px solid $light_ice;
+  border:none;
+  background:lighten($ice,25%);
+  @include box-shadow(0 0 3px transparentize($ice,0.1) inset);  
+  padding:10px;
 }
 
 #product{
@@ -254,7 +259,7 @@ section{
   overflow:auto;
 }
 
-#carousel{
+.carousel{
   background-color:lighten(white, 25%);
   margin-bottom:0;
   .carousel-control{
@@ -262,20 +267,34 @@ section{
     @include transition(opacity 0.5s)
   }
   .item{
-    background-color:lighten(white, 25%);
-    @include border-radius(5px);
+    height:420px;
+    overflow:hidden;
+    h2{
+      font-size:18px;
+      font-family:'AvenirLTStd55Roman';
+    }
     img{
       display:block;
       margin:0 auto;
-      @include box-shadow(0 0 10px rgba(0,0,0,0.4));
+      @include box-shadow(0 0 5px transparentize($ice, 0.2));
     }
   }
   img{
+    float:left;
     max-width:100%;
   }
   &:hover{
     .carousel-control{
       opacity:0.5;
     }
+  }
+}
+#social{
+  margin-top: 10px;
+}
+.oahu{
+  .o_shares{
+    position:static;
+    float:none;
   }
 }

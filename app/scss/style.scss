@@ -32,8 +32,15 @@ h1{
   em{
     font-style:normal;
   }
+  small{
+    font-size:14px;
+    color:lighten($ice, 10%);
+  }
 }
 
+h4{
+  font-family:'Archer-Bold';
+}
 
 .navbar{
   background:white;
@@ -110,7 +117,9 @@ h1{
     text-transform:uppercase;
     line-height:24px;
   }
-
+  h1, h2, h3{
+    margin-bottom:10px;
+  }
 
    // Landscape phones and down
   @media (max-width: 480px) {
@@ -245,3 +254,25 @@ section{
   overflow:auto;
 }
 
+#carousel{
+  background-color:lighten(white, 25%);
+  .carousel-control{
+    opacity:0;
+    @include transition(opacity, 0.5s)
+  }
+  margin-bottom:0;
+  .item{
+    img{
+      display:block;
+      margin:0 auto;
+    }
+  }
+  img{
+    max-height:400px;
+  }
+  &:hover{
+    .carousel-control{
+      opacity:0.5;
+    }
+  }
+}

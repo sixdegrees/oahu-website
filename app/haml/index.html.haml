@@ -125,6 +125,7 @@
             .activity{"data-oahu-bind"=>'activity'}
 
 
+
       %section
         .row
           #clients.span3.clearfix
@@ -240,10 +241,11 @@
       :javascript
         document.createElement('section');
         document.createElement('header');
-      %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
-      %script{:src=>'/assets/vendor/bootstrap/bootstrap.js'}
       :javascript
         OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
+
+      %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
+      %script{:src=>'/assets/vendor/bootstrap/bootstrap.js'}
       %script{:src=>'//app.oahu.fr/assets/oahu.js'}
       %script{:src=>'//app.oahu.fr/assets/oahu-apps.js'}
       %script{:src=>'/assets/js/app.js'}

@@ -1,4 +1,5 @@
-$ -> 
+$ ->
+  # TODO : Implement better
   $('.carousel').carousel()
 
   get_friends =  ()=>
@@ -17,7 +18,7 @@ $ ->
     window.OahuWidget = new Oahu.Apps.Widget({}, { el: "#page" })
     get_activity()
     get_friends()
-    
+
 
   $("[data-oahu-display]").each (i,e)->
     t = $(this)
@@ -30,18 +31,18 @@ $ ->
       Oahu.bind 'oahu:connect:logout:success', (e)=> t.show()
 
   _oahu_config =
-    appId : "f9daf08f500855a2c8e13c07"
+    appId : "2e6aacf05aeeaec81c991a42"
     # appId: "6a5a0464d33a6e9dc2571b9d"
     verbose:true
     debug:true
-    facebook :
-      "appId":'135589799816220'
-      "status":true
-      "cookie":true
-      "xfbml":true
-      "oauth":true
-      "logging":true
-    ga : 
+    # facebook :
+    #   "appId":'135589799816220'
+    #   "status":true
+    #   "cookie":true
+    #   "xfbml":true
+    #   "oauth":true
+    #   "logging":true
+    ga :
       code:"UA-489370-52"
 
   ((d,t)->

@@ -46,17 +46,9 @@
       }
     });
     _oahu_config = {
-      appId: "f9daf08f500855a2c8e13c07",
+      appId: "2e6aacf05aeeaec81c991a42",
       verbose: true,
       debug: true,
-      facebook: {
-        "appId": '135589799816220',
-        "status": true,
-        "cookie": true,
-        "xfbml": true,
-        "oauth": true,
-        "logging": true
-      },
       ga: {
         code: "UA-489370-52"
       }

@@ -28,6 +28,8 @@ group :development, :test do
 	gem 'guard-haml'
   gem 'guard-jammit'
 
+  gem 'rack-livereload'
+
   gem 'growl_notify'
 
   gem 'yajl-ruby'

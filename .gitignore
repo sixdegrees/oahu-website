@@ -2,4 +2,5 @@
 !.gitignore
 
 
-.sass-cache/
+.sass-cache/tmp
+.sass-cache

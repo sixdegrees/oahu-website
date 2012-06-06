@@ -6,16 +6,15 @@ $ ->
     # Oahu.app.getFriends {}, (friends)->
     #   l = if friends.length then friends.length else "none"
     #   $('.oahu_friendscount').html(l)
-  get_activity = ()=>
-    $('[data-oahu-bind="activity"]').each (i,e)->
-      t = $(this)
-      Oahu.ui.feed {}, (activity)=>
-        t.html(activity.markup)
+  # get_activity = ()=>
+    # $('[data-oahu-bind="activity"]').each (i,e)->
+    #   t = $(this)
+    #   Oahu.ui.feed {}, (activity)=>
+    #     t.html(activity.markup)
 
   OahuInitCallback = (e)->
-    console.log "-------------------"
     $('.oahu_username').html(Oahu.account.name)
-    window.OahuWidget = new Oahu.Apps.Widget({}, { el: "#page" })
+    # window.OahuWidget = new Oahu.Apps.Widget({}, { el: "#page" })
     get_activity()
     get_friends()
 
@@ -31,7 +30,8 @@ $ ->
       Oahu.bind 'oahu:connect:logout:success', (e)=> t.show()
 
   _oahu_config =
-    appId : "2e6aacf05aeeaec81c991a42"
+    appId : "f8deb1b9b259571b5e8c9250"
+    # appId : "2e6aacf05aeeaec81c991a42"
     # appId: "6a5a0464d33a6e9dc2571b9d"
     verbose:true
     debug:true

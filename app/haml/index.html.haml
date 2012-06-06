@@ -1,3 +1,4 @@
+- oahu_host = "app.oahu.fr"
 !!!  
 %html.no-js
   %head
@@ -10,8 +11,8 @@
     %link{:rel=>"apple-touch-icon", :href=>"/apple-touch-icon.png"}
     %meta{:name=>"viewport", :content=>"width=device-width, initial-scale=1.0"}
 
-    %link{:rel => "stylesheet", :href=> "//app.oahu.fr/assets/oahu.css" }
-    %link{:rel => "stylesheet", :href=> "//app.oahu.fr/assets/oahu-apps.css" }
+    %link{:rel => "stylesheet", :href=> "//#{oahu_host}/assets/oahu.css" }
+    %link{:rel => "stylesheet", :href=> "//#{oahu_host}/assets/oahu-apps.css" }
     %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap/bootstrap.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/vendor/bootstrap/bootstrap-responsive.min.css" }
     %link{:rel => "stylesheet", :href=> "/assets/css/style.css" }
@@ -28,17 +29,6 @@
             %span.icon-bar
             %span.icon-bar
           .nav-collapse
-            / %ul.nav.secondary-nav.pull-right
-            /   %li.logged_in.dropdown{"data-oahu-display"=>'connected'}
-            /     %a.dropdown-toggle{:href=>"#",  "data-toggle"=>"dropdown"}
-            /       %span.oahu_username{"data-oahu-bind"=>'name'}
-            /       %span.oahu_userpicture
-            /       %b.caret
-            /     %ul.dropdown-menu
-            /       %li
-            /         %a.logout_btn{"data-oahu-display"=>'connected', "data-oahu-action"=>"disconnect", :href=>"#"} Logout
-            /   %li.logged_out.login_status{"data-oahu-display"=>'disconnected'}
-            /     %a.login_btn{:href=>'#', "data-oahu-display"=>'disconnected', "data-oahu-action"=>"connect", "data-oahu-provider"=>"facebook"} Login
 
             %ul.nav.pull-right
               %li
@@ -200,33 +190,6 @@
               %a.btn.btn-large{:href=>'mailto:jobs@oahu.fr'} jobs@oahu.fr
 
 
-      / %section#testdrive{"data-oahu-display"=>'connected'}
-      /   .page-header
-      /     %h1
-      /       Testdrive
-      /       %small Oahu as a user
-      /   .row
-      /     .span4
-      /       %h2 Test out the main Oahu features
-      /       %p
-      /         Since you're connected to Oahu, here's a few simple features you can immediately test out.
-      /         %br
-      /         Many more are available.
-      /       .connect
-      /         %a.btn{"data-oahu-display"=>'connected', "data-oahu-action"=>'disconnect'} Disconnect
-      /     .span4.logged_in{"data-oahu-display"=>'connected'}
-      /       %h2
-      /         Welcome,
-      /         %span.username{"data-oahu-bind"=>'name'} 
-      /       %p 
-      /         %span.oahu_friendscount 0
-      /         of your friends are using Oahu
-      /     .span4.logged_in{"data-oahu-display"=>'connected'}
-      /       %h2 Your recent activity
-      /       .activity{"data-oahu-bind"=>'activity'}
-
-
-
       :javascript
         document.createElement('section');
         document.createElement('header');
@@ -234,7 +197,7 @@
         OahuShareHash = {"image":"https://oahu.fr","game":"Oahu Website","project":"Connect with your audience, anywhere","client":"Oahu","name":"Oahu","url":"https://oahu.fr/","description":"Oahu creates long term, meaningful relationships between you and your community"};
 
       %script{:src=>"//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"}
-      %script{:src=>'/assets/vendor/bootstrap/bootstrap.js'}
-      %script{:src=>'//app.oahu.fr/assets/oahu.js'}
-      %script{:src=>'//app.oahu.fr/assets/oahu-apps.js'}
-      %script{:src=>'/assets/js/app.js'}
+      %script{:src=>"/assets/vendor/bootstrap/bootstrap.js"}
+      %script{:src=>"//#{oahu_host}/assets/oahu.js"}
+      %script{:src=>"//#{oahu_host}/assets/oahu-apps.js"}
+      %script{:src=>"/assets/js/app.js"}

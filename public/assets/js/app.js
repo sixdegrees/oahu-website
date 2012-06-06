@@ -1,26 +1,12 @@
 (function() {
 
   $(function() {
-    var OahuInitCallback, get_activity, get_friends, _oahu_config,
+    var OahuInitCallback, get_friends, _oahu_config,
       _this = this;
     $('.carousel').carousel();
     get_friends = function() {};
-    get_activity = function() {
-      return $('[data-oahu-bind="activity"]').each(function(i, e) {
-        var t,
-          _this = this;
-        t = $(this);
-        return Oahu.ui.feed({}, function(activity) {
-          return t.html(activity.markup);
-        });
-      });
-    };
     OahuInitCallback = function(e) {
-      console.log("-------------------");
       $('.oahu_username').html(Oahu.account.name);
-      window.OahuWidget = new Oahu.Apps.Widget({}, {
-        el: "#page"
-      });
       get_activity();
       return get_friends();
     };
@@ -46,7 +32,7 @@
       }
     });
     _oahu_config = {
-      appId: "2e6aacf05aeeaec81c991a42",
+      appId: "f8deb1b9b259571b5e8c9250",
       verbose: true,
       debug: true,
       ga: {

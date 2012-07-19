@@ -6,9 +6,9 @@ set :rvm_type, :user
 
 ############################################################
 
-role :web,      "neue.fr", :primary => true
-role :app,      "neue.fr", :primary => true
-role :db,       "neue.fr", :primary => true
+role :web,      "oahu.fr", :primary => true
+role :app,      "oahu.fr", :primary => true
+role :db,       "oahu.fr", :primary => true
 set :deploy_to, "/home/domains/oahu.fr/website"
 
 ############################################################
@@ -17,18 +17,12 @@ set :scm, :git
 set :repository, "git@github.com:sixdegrees/oahu-website.git"
 set :branch, 'master'
 
-set :user,      "oahu.neue.fr"
+set :user,      "oahu.fr"
 set :top_domain, "oahu.fr"
 
 set :use_sudo, false
 set :keep_releases, 4
 set :deploy_via, :remote_cache
-
-############################################################
-
-set :flowdock_project_name, "Oahu Website"
-set :flowdock_deploy_tags, ["deploy", "oahu.fr"]
-set :flowdock_api_token, "7a7cd062f2bbd3f7eb2e6b9dd61ef329"
 
 ############################################################
 

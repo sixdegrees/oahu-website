@@ -17,7 +17,7 @@ set :scm, :git
 set :repository, "git@github.com:sixdegrees/oahu-website.git"
 set :branch, 'master'
 
-set :user,      "oahu.fr"
+set :user,      "oahu.neue.fr"
 set :top_domain, "oahu.fr"
 
 set :use_sudo, false

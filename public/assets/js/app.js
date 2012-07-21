@@ -1,10 +1,11 @@
 (function() {
 
   $(function() {
-    var OahuInitCallback, get_friends, _oahu_config,
+    var OahuInitCallback, get_activity, get_friends, _oahu_config,
       _this = this;
     $('.carousel').carousel();
     get_friends = function() {};
+    get_activity = function() {};
     OahuInitCallback = function(e) {
       $('.oahu_username').html(Oahu.account.name);
       get_activity();

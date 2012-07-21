@@ -41,6 +41,7 @@ h1{
 
 h4{
   font-family:'Archer-Bold';
+  margin:10px 0;
 }
 
 .navbar{
@@ -189,6 +190,11 @@ a.btn{
   background:lighten($ice,25%);
   @include box-shadow(0 0 3px transparentize($ice,0.1) inset);  
   padding:10px;
+  &.btn-primary{
+    background-color:$orange;
+    border-color:darken($orange,5%);
+    color:white;
+  }
 }
 
 #product{

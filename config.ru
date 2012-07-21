@@ -7,7 +7,7 @@ require 'rack-livereload'
 
 Bundler.require
 
-use Rack::LiveReload
+use Rack::LiveReload, :min_delay => 500
 
 ENV['RACK_ENV'] ||= 'development'
 ENV['OAHU_ENV'] ||= ENV['RACK_ENV'] 

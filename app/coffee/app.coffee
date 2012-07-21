@@ -6,7 +6,7 @@ $ ->
     # Oahu.app.getFriends {}, (friends)->
     #   l = if friends.length then friends.length else "none"
     #   $('.oahu_friendscount').html(l)
-  # get_activity = ()=>
+  get_activity = ()=>
     # $('[data-oahu-bind="activity"]').each (i,e)->
     #   t = $(this)
     #   Oahu.ui.feed {}, (activity)=>

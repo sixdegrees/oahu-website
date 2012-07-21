@@ -82,6 +82,7 @@ h1 small {
 
 h4 {
   font-family: 'Archer-Bold';
+  margin: 10px 0;
 }
 
 .navbar {
@@ -222,6 +223,11 @@ a.btn {
   -o-box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
   box-shadow: 0 0 3px rgba(173, 184, 192, 0.9) inset;
   padding: 10px;
+}
+a.btn.btn-primary {
+  background-color: #f55405;
+  border-color: #dc4b04;
+  color: white;
 }
 
 #product {

@@ -327,3 +327,7 @@ a.btn.btn-primary {
   position: static;
   float: none;
 }
+
+.row img {
+  max-width: 100%;
+}

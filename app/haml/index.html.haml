@@ -105,8 +105,8 @@
       /     .span4
       /       %iframe{:src=>"//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.oahu.fr&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80", :scrolling=>"no", :frameborder=>'no', :style => "border:none; overflow:hidden; width:100%; height:200px;", :allowTransparency=>'true' }
       /     .span4
-      /       %a.twitter-follow-button{:href=>"https://twitter.com/oahuapp", "data-show-count"=>"false", "data-size"=>"large"} Follow @oahuapp
-      /       %a.twitter-mention-button{:href=>"https://twitter.com/intent/tweet?screen_name=oahuapp&text=How%20are%20you%20doing%2C%20", 'data-size'=>'large'} Tweet to @oahuapp
+      /       %a.twitter-follow-button{:href=>"https://twitter.com/hullapp", "data-show-count"=>"false", "data-size"=>"large"} Follow @hullapp
+      /       %a.twitter-mention-button{:href=>"https://twitter.com/intent/tweet?screen_name=hullapp&text=How%20are%20you%20doing%2C%20", 'data-size'=>'large'} Tweet to @hullapp
 
       %section#about
         .row
@@ -116,8 +116,14 @@
             %p.universal Universal
             %p.pathe Pathé
             %p.orange Orange
-
-          #contact.span3.offset1
+            .clearfix
+          #pmd.span3.clearfix
+            .page-header
+              %h1 Preferred Marketing Developer
+            %p Our product has been awarded the Facebook Preferred Marketing Developer badge for the Apps section.
+            %a{:href=>'https://developers.facebook.com/preferredmarketingdevelopers/', :target=>'_blank'}
+            %img{:src=> '/assets/img/pmd.png'}
+          #contact.span3
             .page-header
               %h1 Contact
             %h2
@@ -129,8 +135,8 @@
             .contact
               %a.btn.btn-large{:href=>'mailto:contact@oahu.fr'} contact@oahu.fr
             %p
-              %a.btn.btn-large.btn-primary{:href=>'https://twitter.com/oahuapp'} Follow @oahuapp
-          #jobs.span3.offset1
+              %a.btn.btn-large.btn-primary{:href=>'https://twitter.com/hullapp'} Follow @hullapp
+          #jobs.span3
             .page-header
               %h1 Jobs
             %h2 We're  currently looking for : 
